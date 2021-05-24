@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>什么是错误优先的回调函数？ | Hello Wold</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/lanjz/assets/css/0.styles.5dda244b.css" as="style"><link rel="preload" href="/lanjz/assets/js/app.193a95f5.js" as="script"><link rel="preload" href="/lanjz/assets/js/2.42578501.js" as="script"><link rel="preload" href="/lanjz/assets/js/99.05dfcb7b.js" as="script"><link rel="prefetch" href="/lanjz/assets/js/10.9907508f.js"><link rel="prefetch" href="/lanjz/assets/js/100.b14bf8fc.js"><link rel="prefetch" href="/lanjz/assets/js/101.f9c937ea.js"><link rel="prefetch" href="/lanjz/assets/js/102.957055bb.js"><link rel="prefetch" href="/lanjz/assets/js/103.765b2360.js"><link rel="prefetch" href="/lanjz/assets/js/104.f3783334.js"><link rel="prefetch" href="/lanjz/assets/js/105.26c069dd.js"><link rel="prefetch" href="/lanjz/assets/js/106.24856bd1.js"><link rel="prefetch" href="/lanjz/assets/js/107.16d52016.js"><link rel="prefetch" href="/lanjz/assets/js/108.a8da0212.js"><link rel="prefetch" href="/lanjz/assets/js/109.15e515a4.js"><link rel="prefetch" href="/lanjz/assets/js/11.e4b14a76.js"><link rel="prefetch" href="/lanjz/assets/js/110.34c3059c.js"><link rel="prefetch" href="/lanjz/assets/js/111.009a8f1a.js"><link rel="prefetch" href="/lanjz/assets/js/112.d0f10748.js"><link rel="prefetch" href="/lanjz/assets/js/113.10b6bcab.js"><link rel="prefetch" href="/lanjz/assets/js/114.9bb13627.js"><link rel="prefetch" href="/lanjz/assets/js/115.28fa24db.js"><link rel="prefetch" href="/lanjz/assets/js/116.b1428667.js"><link rel="prefetch" href="/lanjz/assets/js/117.3250ac7f.js"><link rel="prefetch" href="/lanjz/assets/js/118.77422feb.js"><link rel="prefetch" href="/lanjz/assets/js/119.c66d8f31.js"><link rel="prefetch" href="/lanjz/assets/js/12.963df404.js"><link rel="prefetch" href="/lanjz/assets/js/120.3a911de0.js"><link rel="prefetch" href="/lanjz/assets/js/121.07053828.js"><link rel="prefetch" href="/lanjz/assets/js/122.f34a42b3.js"><link rel="prefetch" href="/lanjz/assets/js/123.b2890fc0.js"><link rel="prefetch" href="/lanjz/assets/js/124.d5568815.js"><link rel="prefetch" href="/lanjz/assets/js/125.04753703.js"><link rel="prefetch" href="/lanjz/assets/js/126.2002abeb.js"><link rel="prefetch" href="/lanjz/assets/js/127.046a1680.js"><link rel="prefetch" href="/lanjz/assets/js/128.b9b06ae8.js"><link rel="prefetch" href="/lanjz/assets/js/129.37af1a36.js"><link rel="prefetch" href="/lanjz/assets/js/13.5f293994.js"><link rel="prefetch" href="/lanjz/assets/js/130.556758a5.js"><link rel="prefetch" href="/lanjz/assets/js/131.983b0b69.js"><link rel="prefetch" href="/lanjz/assets/js/132.22594a9c.js"><link rel="prefetch" href="/lanjz/assets/js/133.a29c6e49.js"><link rel="prefetch" href="/lanjz/assets/js/134.ae121128.js"><link rel="prefetch" href="/lanjz/assets/js/135.9530e173.js"><link rel="prefetch" href="/lanjz/assets/js/136.b383527a.js"><link rel="prefetch" href="/lanjz/assets/js/137.7976d756.js"><link rel="prefetch" href="/lanjz/assets/js/138.9af8fb15.js"><link rel="prefetch" href="/lanjz/assets/js/139.4795c02c.js"><link rel="prefetch" href="/lanjz/assets/js/14.f8b5c7e1.js"><link rel="prefetch" href="/lanjz/assets/js/140.16232cab.js"><link rel="prefetch" href="/lanjz/assets/js/141.a8825489.js"><link rel="prefetch" href="/lanjz/assets/js/142.c8ef20d9.js"><link rel="prefetch" href="/lanjz/assets/js/143.ed4a2ca5.js"><link rel="prefetch" href="/lanjz/assets/js/144.c62073b9.js"><link rel="prefetch" href="/lanjz/assets/js/145.cc42d920.js"><link rel="prefetch" href="/lanjz/assets/js/146.3719d1b2.js"><link rel="prefetch" href="/lanjz/assets/js/147.13d96163.js"><link rel="prefetch" href="/lanjz/assets/js/148.f16eb171.js"><link rel="prefetch" href="/lanjz/assets/js/149.920c2148.js"><link rel="prefetch" href="/lanjz/assets/js/15.67188da4.js"><link rel="prefetch" href="/lanjz/assets/js/150.7bacdb5d.js"><link rel="prefetch" href="/lanjz/assets/js/151.b9b60736.js"><link rel="prefetch" href="/lanjz/assets/js/152.e4ecd542.js"><link rel="prefetch" href="/lanjz/assets/js/153.64adb680.js"><link rel="prefetch" href="/lanjz/assets/js/154.3819ff30.js"><link rel="prefetch" href="/lanjz/assets/js/155.94b72b2e.js"><link rel="prefetch" href="/lanjz/assets/js/156.58a653d8.js"><link rel="prefetch" href="/lanjz/assets/js/157.59e134d3.js"><link rel="prefetch" href="/lanjz/assets/js/158.66d4ed01.js"><link rel="prefetch" href="/lanjz/assets/js/159.12ac079f.js"><link rel="prefetch" href="/lanjz/assets/js/16.a7b92bb3.js"><link rel="prefetch" href="/lanjz/assets/js/160.2f0e5eff.js"><link rel="prefetch" href="/lanjz/assets/js/161.a1f34066.js"><link rel="prefetch" href="/lanjz/assets/js/162.89b54ae7.js"><link rel="prefetch" href="/lanjz/assets/js/163.35f44c6b.js"><link rel="prefetch" href="/lanjz/assets/js/164.a24b2f98.js"><link rel="prefetch" href="/lanjz/assets/js/165.d08d83bb.js"><link rel="prefetch" href="/lanjz/assets/js/166.d6fe2283.js"><link rel="prefetch" href="/lanjz/assets/js/167.01ddb2b1.js"><link rel="prefetch" href="/lanjz/assets/js/168.3112dd8f.js"><link rel="prefetch" href="/lanjz/assets/js/169.7bebfe48.js"><link rel="prefetch" href="/lanjz/assets/js/17.9d035f99.js"><link rel="prefetch" href="/lanjz/assets/js/170.ba7efa85.js"><link rel="prefetch" href="/lanjz/assets/js/171.2e12ba84.js"><link rel="prefetch" href="/lanjz/assets/js/172.087979db.js"><link rel="prefetch" href="/lanjz/assets/js/173.180fbff0.js"><link rel="prefetch" href="/lanjz/assets/js/174.da7ad396.js"><link rel="prefetch" href="/lanjz/assets/js/175.d4c739ac.js"><link rel="prefetch" href="/lanjz/assets/js/176.cc675500.js"><link rel="prefetch" href="/lanjz/assets/js/177.5b70b1d4.js"><link rel="prefetch" href="/lanjz/assets/js/178.2319ae70.js"><link rel="prefetch" href="/lanjz/assets/js/179.3d1ce151.js"><link rel="prefetch" href="/lanjz/assets/js/18.9dcaeec3.js"><link rel="prefetch" href="/lanjz/assets/js/180.278212e3.js"><link rel="prefetch" href="/lanjz/assets/js/181.4067162b.js"><link rel="prefetch" href="/lanjz/assets/js/182.6ae36107.js"><link rel="prefetch" href="/lanjz/assets/js/183.a82782e5.js"><link rel="prefetch" href="/lanjz/assets/js/184.367c92e1.js"><link rel="prefetch" href="/lanjz/assets/js/185.ba1bb6e6.js"><link rel="prefetch" href="/lanjz/assets/js/186.68a45286.js"><link rel="prefetch" href="/lanjz/assets/js/187.10b9cb2e.js"><link rel="prefetch" href="/lanjz/assets/js/188.950b38f1.js"><link rel="prefetch" href="/lanjz/assets/js/189.cf08df1a.js"><link rel="prefetch" href="/lanjz/assets/js/19.ed1bbc63.js"><link rel="prefetch" href="/lanjz/assets/js/190.61089b48.js"><link rel="prefetch" href="/lanjz/assets/js/191.8afd4582.js"><link rel="prefetch" href="/lanjz/assets/js/192.d7b81726.js"><link rel="prefetch" href="/lanjz/assets/js/193.57a534df.js"><link rel="prefetch" href="/lanjz/assets/js/194.1c9eb9f1.js"><link rel="prefetch" href="/lanjz/assets/js/195.768f104c.js"><link rel="prefetch" href="/lanjz/assets/js/196.73409054.js"><link rel="prefetch" href="/lanjz/assets/js/197.a81343de.js"><link rel="prefetch" href="/lanjz/assets/js/198.b976739a.js"><link rel="prefetch" href="/lanjz/assets/js/199.761975fb.js"><link rel="prefetch" href="/lanjz/assets/js/20.cb51f93b.js"><link rel="prefetch" href="/lanjz/assets/js/200.ac4690ee.js"><link rel="prefetch" href="/lanjz/assets/js/201.54892073.js"><link rel="prefetch" href="/lanjz/assets/js/21.14ef330a.js"><link rel="prefetch" href="/lanjz/assets/js/22.851053b7.js"><link rel="prefetch" href="/lanjz/assets/js/23.97f11872.js"><link rel="prefetch" href="/lanjz/assets/js/24.8b7fe7e7.js"><link rel="prefetch" href="/lanjz/assets/js/25.9785e812.js"><link rel="prefetch" href="/lanjz/assets/js/26.e833a3fc.js"><link rel="prefetch" href="/lanjz/assets/js/27.d0224e2e.js"><link rel="prefetch" href="/lanjz/assets/js/28.6a97024d.js"><link rel="prefetch" href="/lanjz/assets/js/29.044c8324.js"><link rel="prefetch" href="/lanjz/assets/js/3.4fd4d6ce.js"><link rel="prefetch" href="/lanjz/assets/js/30.19ec82d0.js"><link rel="prefetch" href="/lanjz/assets/js/31.95eb8b7c.js"><link rel="prefetch" href="/lanjz/assets/js/32.9ec1638e.js"><link rel="prefetch" href="/lanjz/assets/js/33.8cb76a63.js"><link rel="prefetch" href="/lanjz/assets/js/34.b460535c.js"><link rel="prefetch" href="/lanjz/assets/js/35.b587af0e.js"><link rel="prefetch" href="/lanjz/assets/js/36.564fdbca.js"><link rel="prefetch" href="/lanjz/assets/js/37.e4f67436.js"><link rel="prefetch" href="/lanjz/assets/js/38.783d74f3.js"><link rel="prefetch" href="/lanjz/assets/js/39.6a2866e8.js"><link rel="prefetch" href="/lanjz/assets/js/4.3802e1cb.js"><link rel="prefetch" href="/lanjz/assets/js/40.80adca89.js"><link rel="prefetch" href="/lanjz/assets/js/41.4a9f3cb1.js"><link rel="prefetch" href="/lanjz/assets/js/42.72b6f021.js"><link rel="prefetch" href="/lanjz/assets/js/43.148b109f.js"><link rel="prefetch" href="/lanjz/assets/js/44.2904b577.js"><link rel="prefetch" href="/lanjz/assets/js/45.f8e64a75.js"><link rel="prefetch" href="/lanjz/assets/js/46.194cdd2c.js"><link rel="prefetch" href="/lanjz/assets/js/47.d7a1eee7.js"><link rel="prefetch" href="/lanjz/assets/js/48.254a8390.js"><link rel="prefetch" href="/lanjz/assets/js/49.608068d2.js"><link rel="prefetch" href="/lanjz/assets/js/5.1a6efd45.js"><link rel="prefetch" href="/lanjz/assets/js/50.49cd15c3.js"><link rel="prefetch" href="/lanjz/assets/js/51.cb53513a.js"><link rel="prefetch" href="/lanjz/assets/js/52.f42dc47b.js"><link rel="prefetch" href="/lanjz/assets/js/53.56437649.js"><link rel="prefetch" href="/lanjz/assets/js/54.ecce13a5.js"><link rel="prefetch" href="/lanjz/assets/js/55.f959dee2.js"><link rel="prefetch" href="/lanjz/assets/js/56.f89d43e4.js"><link rel="prefetch" href="/lanjz/assets/js/57.8f464cda.js"><link rel="prefetch" href="/lanjz/assets/js/58.ef375410.js"><link rel="prefetch" href="/lanjz/assets/js/59.53a5b9c7.js"><link rel="prefetch" href="/lanjz/assets/js/6.2a3529f7.js"><link rel="prefetch" href="/lanjz/assets/js/60.0305f44c.js"><link rel="prefetch" href="/lanjz/assets/js/61.f31f117a.js"><link rel="prefetch" href="/lanjz/assets/js/62.fe5ce2e9.js"><link rel="prefetch" href="/lanjz/assets/js/63.8030cc72.js"><link rel="prefetch" href="/lanjz/assets/js/64.a3d68b22.js"><link rel="prefetch" href="/lanjz/assets/js/65.a5d90b8a.js"><link rel="prefetch" href="/lanjz/assets/js/66.ee0baed7.js"><link rel="prefetch" href="/lanjz/assets/js/67.5d18a7e8.js"><link rel="prefetch" href="/lanjz/assets/js/68.3facc0ae.js"><link rel="prefetch" href="/lanjz/assets/js/69.d49b6c44.js"><link rel="prefetch" href="/lanjz/assets/js/7.253748fb.js"><link rel="prefetch" href="/lanjz/assets/js/70.60ec57bb.js"><link rel="prefetch" href="/lanjz/assets/js/71.646675d3.js"><link rel="prefetch" href="/lanjz/assets/js/72.cda11d39.js"><link rel="prefetch" href="/lanjz/assets/js/73.aa566793.js"><link rel="prefetch" href="/lanjz/assets/js/74.154b4dc1.js"><link rel="prefetch" href="/lanjz/assets/js/75.eb188cde.js"><link rel="prefetch" href="/lanjz/assets/js/76.f3c7f69a.js"><link rel="prefetch" href="/lanjz/assets/js/77.25c12eab.js"><link rel="prefetch" href="/lanjz/assets/js/78.212c7733.js"><link rel="prefetch" href="/lanjz/assets/js/79.79a74859.js"><link rel="prefetch" href="/lanjz/assets/js/8.00723369.js"><link rel="prefetch" href="/lanjz/assets/js/80.737c4f47.js"><link rel="prefetch" href="/lanjz/assets/js/81.b7a30849.js"><link rel="prefetch" href="/lanjz/assets/js/82.665aa383.js"><link rel="prefetch" href="/lanjz/assets/js/83.2dcf80f9.js"><link rel="prefetch" href="/lanjz/assets/js/84.eb8f6658.js"><link rel="prefetch" href="/lanjz/assets/js/85.95290bd7.js"><link rel="prefetch" href="/lanjz/assets/js/86.10516fe4.js"><link rel="prefetch" href="/lanjz/assets/js/87.cc609da2.js"><link rel="prefetch" href="/lanjz/assets/js/88.df7752b2.js"><link rel="prefetch" href="/lanjz/assets/js/89.e1c531e9.js"><link rel="prefetch" href="/lanjz/assets/js/9.01bf6833.js"><link rel="prefetch" href="/lanjz/assets/js/90.198aafd0.js"><link rel="prefetch" href="/lanjz/assets/js/91.a52d269d.js"><link rel="prefetch" href="/lanjz/assets/js/92.2be95a27.js"><link rel="prefetch" href="/lanjz/assets/js/93.60eb3f72.js"><link rel="prefetch" href="/lanjz/assets/js/94.508edcd5.js"><link rel="prefetch" href="/lanjz/assets/js/95.21ac0aec.js"><link rel="prefetch" href="/lanjz/assets/js/96.dba7c5cf.js"><link rel="prefetch" href="/lanjz/assets/js/97.8006f58a.js"><link rel="prefetch" href="/lanjz/assets/js/98.881109d8.js">
+    <link rel="stylesheet" href="/lanjz/assets/css/0.styles.5dda244b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/lanjz/" class="home-link router-link-active"><!----> <span class="site-name">Hello Wold</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/lanjz/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/HTML5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Browser/" class="nav-link">
+  Browser
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络&amp;算法" class="dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络&amp;算法" class="mobile-dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/secure/" class="nav-link">
+  Web安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Vue3/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/qiankun/" class="nav-link">
+  qiankun
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/NA/" class="nav-link">
+  跨平台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Node/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Api/" class="nav-link router-link-active">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Package/" class="nav-link">
+  yarn&amp;npm
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端优化总结/" class="nav-link">
+  前端优化总结
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/系统设计/" class="nav-link">
+  系统设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/预加载&amp;预解析.html" class="nav-link">
+  预加载&amp;预解析
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/重构改善既有代码的设计.html" class="nav-link">
+  重构代码原则
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/开发与调试技巧.html" class="nav-link">
+  开发与调试
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/组件设计的基本原则.html" class="nav-link">
+  组件设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/公共模块管理.html" class="nav-link">
+  公共模块管理
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/内存泄漏.html" class="nav-link">
+  内存泄漏
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端异常捕获.html" class="nav-link">
+  前端异常捕获
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/自动化部署.html" class="nav-link">
+  自动化部署
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/疑难杂症.html" class="nav-link">
+  疑难杂症
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="利其器" class="dropdown-title"><span class="title">利其器</span> <span class="arrow down"></span></button> <button type="button" aria-label="利其器" class="mobile-dropdown-title"><span class="title">利其器</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Mac.html" class="nav-link">
+  Mac
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Github.html" class="nav-link">
+  Github
+</a></li></ul></div></div><div class="nav-item"><a href="/lanjz/Im/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/lanjz/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/HTML5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Browser/" class="nav-link">
+  Browser
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络&amp;算法" class="dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络&amp;算法" class="mobile-dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/secure/" class="nav-link">
+  Web安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Vue3/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/qiankun/" class="nav-link">
+  qiankun
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/NA/" class="nav-link">
+  跨平台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Node/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Api/" class="nav-link router-link-active">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Package/" class="nav-link">
+  yarn&amp;npm
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端优化总结/" class="nav-link">
+  前端优化总结
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/系统设计/" class="nav-link">
+  系统设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/预加载&amp;预解析.html" class="nav-link">
+  预加载&amp;预解析
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/重构改善既有代码的设计.html" class="nav-link">
+  重构代码原则
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/开发与调试技巧.html" class="nav-link">
+  开发与调试
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/组件设计的基本原则.html" class="nav-link">
+  组件设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/公共模块管理.html" class="nav-link">
+  公共模块管理
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/内存泄漏.html" class="nav-link">
+  内存泄漏
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端异常捕获.html" class="nav-link">
+  前端异常捕获
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/自动化部署.html" class="nav-link">
+  自动化部署
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/疑难杂症.html" class="nav-link">
+  疑难杂症
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="利其器" class="dropdown-title"><span class="title">利其器</span> <span class="arrow down"></span></button> <button type="button" aria-label="利其器" class="mobile-dropdown-title"><span class="title">利其器</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Mac.html" class="nav-link">
+  Mac
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Github.html" class="nav-link">
+  Github
+</a></li></ul></div></div><div class="nav-item"><a href="/lanjz/Im/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/lanjz/Node/Api/Buffer.html" class="sidebar-link">Buffer</a></li><li><a href="/lanjz/Node/Api/流.html" class="sidebar-link">流</a></li><li><a href="/lanjz/Node/Api/Node中的进程和线程.html" class="sidebar-link">Node中的进程和线程</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="什么是错误优先的回调函数"><a href="#什么是错误优先的回调函数" class="header-anchor">#</a> 什么是错误优先的回调函数？</h3> <p>错误优先的回调函数用于传递错误和数据。第一个参数始终应该是一个错误对象， 用于检查程序是否发生了错误。其余的参数用于传递数据。例如：</p> <div class="language- extra-class"><pre class="language-text"><code>fs.readFile(filePath, function(err, data) {  
+    if (err) {
+        //handle the error
+    }
+    // use the data object
+});
+</code></pre></div><h3 id="如何避免回调地狱"><a href="#如何避免回调地狱" class="header-anchor">#</a> 如何避免回调地狱</h3> <p>你可以有如下几个方法：</p> <ul><li><p>模块化：将回调函数分割为独立的函数</p></li> <li><p>使用Promises</p></li> <li><p>使用<code>yield</code></p></li></ul> <h2 id="什么是孤儿进程"><a href="#什么是孤儿进程" class="header-anchor">#</a> 什么是孤儿进程？</h2> <p>父进程创建子进程之后，父进程退出了，但是父进程对应的一个或多个子进程还在运行，这些子进程会被系统的 init 进程收养，对应的进程 ppid 为 1，这就是孤儿进程。通过以下代码示例说明。</p> <div class="language- extra-class"><pre class="language-text"><code>// master.js
+const fork = require('child_process').fork;
+const server = require('net').createServer();
+server.listen(3000);
+const worker = fork('worker.js');
+
+worker.send('server', server);
+console.log('worker process created, pid: %s ppid: %s', worker.pid, process.pid);
+process.exit(0); // 创建子进程之后，主进程退出，此时创建的 worker 进程会成为孤儿进程
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>// worker.js
+const http = require('http');
+const server = http.createServer((req, res) =&gt; {
+    res.end('I am worker, pid: ' + process.pid + ', ppid: ' + process.ppid); // 记录当前工作进程 pid 及父进程 ppid
+});
+
+let worker;
+process.on('message', function (message, sendHandle) {
+    if (message === 'server') {
+        worker = sendHandle;
+        worker.on('connection', function(socket) {
+            server.emit('connection', socket);
+        });
+    }
+});
+
+</code></pre></div><p>控制台进行测试，输出当前工作进程 pid 和 父进程 ppid</p> <div class="language- extra-class"><pre class="language-text"><code>worker process created, pid: 32971 ppid: 32970
+</code></pre></div><p>由于在 master.js 里退出了父进程，活动监视器所显示的也就只有工作进程</p> <p><img src="https://ask.qcloudimg.com/http-save/yehe-3057196/2o9udya025.jpeg?imageView2/2/w/1620" alt=""></p> <p>再次验证，打开控制台调用接口，可以看到工作进程 32971 对应的 ppid 为 1（为 init 进程），此时已经成为了孤儿进程</p> <div class="language- extra-class"><pre class="language-text"><code>curl http://127.0.0.1:3000
+I am worker, pid: 32971, ppid: 1
+</code></pre></div><h2 id="什么是僵尸进程"><a href="#什么是僵尸进程" class="header-anchor">#</a> 什么是僵尸进程</h2> <p>一个进程使用fork创建子进程，如果子进程退出，而父进程并没有调用wait或waitpid获取子进程的状态信息，那么子进程的进程描述符仍然保存在系统中。这种进程称之为僵死进程。任何一个子进程(init除外)在exit()之后，并非马上就消失掉，而是留下一个称为僵尸进程(Zombie)的数据结构，等待父进程处理。一旦有很多只处理少量任务的子进程完成任务后就退出，然后父进程又不管子进程的退出，然后就会产生很多的僵死进程，这样会对程序产生一定的危害</p> <h2 id="什么是-ipc-通信-如何建立-ipc-通信-什么场景下需要用到-ipc-通信"><a href="#什么是-ipc-通信-如何建立-ipc-通信-什么场景下需要用到-ipc-通信" class="header-anchor">#</a> 什么是 IPC 通信，如何建立 IPC 通信？什么场景下需要用到 IPC 通信？</h2> <p>IPC (Inter-process communication) ，即进程间通信技术，由于每个进程创建之后都有自己的独立地址空间，实现 IPC 的目的就是为了进程之间资源共享访问，实现 IPC 的方式有多种：管道、消息队列、信号量、Domain Socket，Node.js 通过 <code>pipe</code>来实现。</p> <p>看一下 Demo，未使用 IPC 的情况</p> <div class="language- extra-class"><pre class="language-text"><code>// pipe.js
+const spawn = require('child_process').spawn;
+const child = spawn('node', ['worker.js'])
+console.log(process.pid, child.pid); // 主进程id3243 子进程3244
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>// worker.js
+console.log('I am worker, PID: ', process.pid);
+</code></pre></div><p>控制台执行 node pipe.js，输出主进程id、子进程id，但是子进程 worker.js 的信息并没有在控制台打印，原因是新创建的子进程有自己的stdio 流</p> <p>创建一个父进程和子进程之间传递消息的 IPC 通道实现输出信息</p> <p>修改 pipe.js 让子进程的 stdio 和当前进程的 stdio 之间建立管道链接，还可以通过 spawn() 方法的 stdio 选项建立 IPC 机制，</p> <div class="language- extra-class"><pre class="language-text"><code>const spawn = require('child_process').spawn;
+const child = spawn('node', ['worker.js'])
+child.stdout.pipe(process.stdout);
+console.log(process.pid, child.pid);
+
+</code></pre></div><p>再次验证，控制台执行 <code>node pipe.js</code>，<code>worker.js</code> 的信息也打印了出来</p> <div class="language- extra-class"><pre class="language-text"><code>$ 42473 42474
+I am worker, PID:  42474
+
+</code></pre></div><h2 id="关于父进程与子进程是如何通信的"><a href="#关于父进程与子进程是如何通信的" class="header-anchor">#</a> 关于父进程与子进程是如何通信的</h2> <p>父进程在创建子进程之前会先去创建 IPC 通道并一直监听该通道，之后开始创建子进程并通过环境变量（NODECHANNELFD）的方式将 IPC 通道的文件描述符传递给子进程，子进程启动时根据传递的文件描述符去链接 IPC 通道，从而建立父子进程之间的通信机制</p> <p>![](https://ask.qcloudimg.com/http-save/yehe-3057196/ooc03o3ckg.jpeg?imageView2/2/w/1620</p> <h2 id="node为什么是单线程"><a href="#node为什么是单线程" class="header-anchor">#</a> Node为什么是单线程</h2> <p>Javascript 为什么是单线程？这个问题需要从浏览器说起，在浏览器环境中对于 DOM 的操作，试想如果多个线程来对同一个 DOM 操作是不是就乱了呢，那也就意味着对于DOM的操作只能是单线程，避免 DOM 渲染冲突。在浏览器环境中 UI 渲染线程和 JS 执行引擎是互斥的，一方在执行时都会导致另一方被挂起，这是由 JS 引擎所决定的</p> <h2 id="如何让一个-js-文件在-linux-下成为一个可执行命令程序"><a href="#如何让一个-js-文件在-linux-下成为一个可执行命令程序" class="header-anchor">#</a> 如何让一个 js 文件在 Linux 下成为一个可执行命令程序</h2> <ol><li><p>新建 hello.js 文件，头部须加上 <code>#!/usr/bin/env node</code>，表示当前脚本使用 Node.js 进行解析</p></li> <li><p>赋予文件可执行权限 <code>chmod +x chmod +x /${dir}/hello.js</code>，目录自定义</p></li> <li><p>在 <code>/usr/local/bin</code> 目录下创建一个软链文件 <code>sudo ln-s/${dir}/hello.js/usr/local/bin/hello</code>，文件名就是我们在终端使用的名字</p></li> <li><p>终端执行 hello 相当于输入 node hello.js</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>#!/usr/bin/env node
+
+console.log('hello world!')
+</code></pre></div><p>终端测试</p> <div class="language- extra-class"><pre class="language-text"><code>$ hello
+hello world
+</code></pre></div><h2 id="进程的当前工作目录是什么-有什么作用"><a href="#进程的当前工作目录是什么-有什么作用" class="header-anchor">#</a> 进程的当前工作目录是什么? 有什么作用?</h2> <p>进程的当前工作目录可以通过 process.cwd() 命令获取，默认为当前启动的目录，如果是创建子进程则继承于父进程的目录，可通过 process.chdir() 命令重置，例如通过 spawn 命令创建的子进程可以指定 cwd 选项设置子进程的工作目录。</p> <p>有什么作用？例如，通过 fs 读取文件，如果设置为相对路径则相对于当前进程启动的目录进行查找，所以，启动目录设置有误的情况下将无法得到正确的结果。还有一种情况程序里引用第三方模块也是根据当前进程启动的目录来进行查找的。</p> <div class="language- extra-class"><pre class="language-text"><code>process.chdir('/Users/may/Documents/test/') // 设置当前进程目录
+
+console.log(process.cwd()); // 获取当前进程目录
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/lanjz/assets/js/app.193a95f5.js" defer></script><script src="/lanjz/assets/js/2.42578501.js" defer></script><script src="/lanjz/assets/js/99.05dfcb7b.js" defer></script>
+  </body>
+</html>

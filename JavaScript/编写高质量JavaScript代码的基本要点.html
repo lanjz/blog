@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>编写高质量JavaScript代码的基本要点 | Hello Wold</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/lanjz/assets/css/0.styles.5dda244b.css" as="style"><link rel="preload" href="/lanjz/assets/js/app.193a95f5.js" as="script"><link rel="preload" href="/lanjz/assets/js/2.42578501.js" as="script"><link rel="preload" href="/lanjz/assets/js/93.60eb3f72.js" as="script"><link rel="prefetch" href="/lanjz/assets/js/10.9907508f.js"><link rel="prefetch" href="/lanjz/assets/js/100.b14bf8fc.js"><link rel="prefetch" href="/lanjz/assets/js/101.f9c937ea.js"><link rel="prefetch" href="/lanjz/assets/js/102.957055bb.js"><link rel="prefetch" href="/lanjz/assets/js/103.765b2360.js"><link rel="prefetch" href="/lanjz/assets/js/104.f3783334.js"><link rel="prefetch" href="/lanjz/assets/js/105.26c069dd.js"><link rel="prefetch" href="/lanjz/assets/js/106.24856bd1.js"><link rel="prefetch" href="/lanjz/assets/js/107.16d52016.js"><link rel="prefetch" href="/lanjz/assets/js/108.a8da0212.js"><link rel="prefetch" href="/lanjz/assets/js/109.15e515a4.js"><link rel="prefetch" href="/lanjz/assets/js/11.e4b14a76.js"><link rel="prefetch" href="/lanjz/assets/js/110.34c3059c.js"><link rel="prefetch" href="/lanjz/assets/js/111.009a8f1a.js"><link rel="prefetch" href="/lanjz/assets/js/112.d0f10748.js"><link rel="prefetch" href="/lanjz/assets/js/113.10b6bcab.js"><link rel="prefetch" href="/lanjz/assets/js/114.9bb13627.js"><link rel="prefetch" href="/lanjz/assets/js/115.28fa24db.js"><link rel="prefetch" href="/lanjz/assets/js/116.b1428667.js"><link rel="prefetch" href="/lanjz/assets/js/117.3250ac7f.js"><link rel="prefetch" href="/lanjz/assets/js/118.77422feb.js"><link rel="prefetch" href="/lanjz/assets/js/119.c66d8f31.js"><link rel="prefetch" href="/lanjz/assets/js/12.963df404.js"><link rel="prefetch" href="/lanjz/assets/js/120.3a911de0.js"><link rel="prefetch" href="/lanjz/assets/js/121.07053828.js"><link rel="prefetch" href="/lanjz/assets/js/122.f34a42b3.js"><link rel="prefetch" href="/lanjz/assets/js/123.b2890fc0.js"><link rel="prefetch" href="/lanjz/assets/js/124.d5568815.js"><link rel="prefetch" href="/lanjz/assets/js/125.04753703.js"><link rel="prefetch" href="/lanjz/assets/js/126.2002abeb.js"><link rel="prefetch" href="/lanjz/assets/js/127.046a1680.js"><link rel="prefetch" href="/lanjz/assets/js/128.b9b06ae8.js"><link rel="prefetch" href="/lanjz/assets/js/129.37af1a36.js"><link rel="prefetch" href="/lanjz/assets/js/13.5f293994.js"><link rel="prefetch" href="/lanjz/assets/js/130.556758a5.js"><link rel="prefetch" href="/lanjz/assets/js/131.983b0b69.js"><link rel="prefetch" href="/lanjz/assets/js/132.22594a9c.js"><link rel="prefetch" href="/lanjz/assets/js/133.a29c6e49.js"><link rel="prefetch" href="/lanjz/assets/js/134.ae121128.js"><link rel="prefetch" href="/lanjz/assets/js/135.9530e173.js"><link rel="prefetch" href="/lanjz/assets/js/136.b383527a.js"><link rel="prefetch" href="/lanjz/assets/js/137.7976d756.js"><link rel="prefetch" href="/lanjz/assets/js/138.9af8fb15.js"><link rel="prefetch" href="/lanjz/assets/js/139.4795c02c.js"><link rel="prefetch" href="/lanjz/assets/js/14.f8b5c7e1.js"><link rel="prefetch" href="/lanjz/assets/js/140.16232cab.js"><link rel="prefetch" href="/lanjz/assets/js/141.a8825489.js"><link rel="prefetch" href="/lanjz/assets/js/142.c8ef20d9.js"><link rel="prefetch" href="/lanjz/assets/js/143.ed4a2ca5.js"><link rel="prefetch" href="/lanjz/assets/js/144.c62073b9.js"><link rel="prefetch" href="/lanjz/assets/js/145.cc42d920.js"><link rel="prefetch" href="/lanjz/assets/js/146.3719d1b2.js"><link rel="prefetch" href="/lanjz/assets/js/147.13d96163.js"><link rel="prefetch" href="/lanjz/assets/js/148.f16eb171.js"><link rel="prefetch" href="/lanjz/assets/js/149.920c2148.js"><link rel="prefetch" href="/lanjz/assets/js/15.67188da4.js"><link rel="prefetch" href="/lanjz/assets/js/150.7bacdb5d.js"><link rel="prefetch" href="/lanjz/assets/js/151.b9b60736.js"><link rel="prefetch" href="/lanjz/assets/js/152.e4ecd542.js"><link rel="prefetch" href="/lanjz/assets/js/153.64adb680.js"><link rel="prefetch" href="/lanjz/assets/js/154.3819ff30.js"><link rel="prefetch" href="/lanjz/assets/js/155.94b72b2e.js"><link rel="prefetch" href="/lanjz/assets/js/156.58a653d8.js"><link rel="prefetch" href="/lanjz/assets/js/157.59e134d3.js"><link rel="prefetch" href="/lanjz/assets/js/158.66d4ed01.js"><link rel="prefetch" href="/lanjz/assets/js/159.12ac079f.js"><link rel="prefetch" href="/lanjz/assets/js/16.a7b92bb3.js"><link rel="prefetch" href="/lanjz/assets/js/160.2f0e5eff.js"><link rel="prefetch" href="/lanjz/assets/js/161.a1f34066.js"><link rel="prefetch" href="/lanjz/assets/js/162.89b54ae7.js"><link rel="prefetch" href="/lanjz/assets/js/163.35f44c6b.js"><link rel="prefetch" href="/lanjz/assets/js/164.a24b2f98.js"><link rel="prefetch" href="/lanjz/assets/js/165.d08d83bb.js"><link rel="prefetch" href="/lanjz/assets/js/166.d6fe2283.js"><link rel="prefetch" href="/lanjz/assets/js/167.01ddb2b1.js"><link rel="prefetch" href="/lanjz/assets/js/168.3112dd8f.js"><link rel="prefetch" href="/lanjz/assets/js/169.7bebfe48.js"><link rel="prefetch" href="/lanjz/assets/js/17.9d035f99.js"><link rel="prefetch" href="/lanjz/assets/js/170.ba7efa85.js"><link rel="prefetch" href="/lanjz/assets/js/171.2e12ba84.js"><link rel="prefetch" href="/lanjz/assets/js/172.087979db.js"><link rel="prefetch" href="/lanjz/assets/js/173.180fbff0.js"><link rel="prefetch" href="/lanjz/assets/js/174.da7ad396.js"><link rel="prefetch" href="/lanjz/assets/js/175.d4c739ac.js"><link rel="prefetch" href="/lanjz/assets/js/176.cc675500.js"><link rel="prefetch" href="/lanjz/assets/js/177.5b70b1d4.js"><link rel="prefetch" href="/lanjz/assets/js/178.2319ae70.js"><link rel="prefetch" href="/lanjz/assets/js/179.3d1ce151.js"><link rel="prefetch" href="/lanjz/assets/js/18.9dcaeec3.js"><link rel="prefetch" href="/lanjz/assets/js/180.278212e3.js"><link rel="prefetch" href="/lanjz/assets/js/181.4067162b.js"><link rel="prefetch" href="/lanjz/assets/js/182.6ae36107.js"><link rel="prefetch" href="/lanjz/assets/js/183.a82782e5.js"><link rel="prefetch" href="/lanjz/assets/js/184.367c92e1.js"><link rel="prefetch" href="/lanjz/assets/js/185.ba1bb6e6.js"><link rel="prefetch" href="/lanjz/assets/js/186.68a45286.js"><link rel="prefetch" href="/lanjz/assets/js/187.10b9cb2e.js"><link rel="prefetch" href="/lanjz/assets/js/188.950b38f1.js"><link rel="prefetch" href="/lanjz/assets/js/189.cf08df1a.js"><link rel="prefetch" href="/lanjz/assets/js/19.ed1bbc63.js"><link rel="prefetch" href="/lanjz/assets/js/190.61089b48.js"><link rel="prefetch" href="/lanjz/assets/js/191.8afd4582.js"><link rel="prefetch" href="/lanjz/assets/js/192.d7b81726.js"><link rel="prefetch" href="/lanjz/assets/js/193.57a534df.js"><link rel="prefetch" href="/lanjz/assets/js/194.1c9eb9f1.js"><link rel="prefetch" href="/lanjz/assets/js/195.768f104c.js"><link rel="prefetch" href="/lanjz/assets/js/196.73409054.js"><link rel="prefetch" href="/lanjz/assets/js/197.a81343de.js"><link rel="prefetch" href="/lanjz/assets/js/198.b976739a.js"><link rel="prefetch" href="/lanjz/assets/js/199.761975fb.js"><link rel="prefetch" href="/lanjz/assets/js/20.cb51f93b.js"><link rel="prefetch" href="/lanjz/assets/js/200.ac4690ee.js"><link rel="prefetch" href="/lanjz/assets/js/201.54892073.js"><link rel="prefetch" href="/lanjz/assets/js/21.14ef330a.js"><link rel="prefetch" href="/lanjz/assets/js/22.851053b7.js"><link rel="prefetch" href="/lanjz/assets/js/23.97f11872.js"><link rel="prefetch" href="/lanjz/assets/js/24.8b7fe7e7.js"><link rel="prefetch" href="/lanjz/assets/js/25.9785e812.js"><link rel="prefetch" href="/lanjz/assets/js/26.e833a3fc.js"><link rel="prefetch" href="/lanjz/assets/js/27.d0224e2e.js"><link rel="prefetch" href="/lanjz/assets/js/28.6a97024d.js"><link rel="prefetch" href="/lanjz/assets/js/29.044c8324.js"><link rel="prefetch" href="/lanjz/assets/js/3.4fd4d6ce.js"><link rel="prefetch" href="/lanjz/assets/js/30.19ec82d0.js"><link rel="prefetch" href="/lanjz/assets/js/31.95eb8b7c.js"><link rel="prefetch" href="/lanjz/assets/js/32.9ec1638e.js"><link rel="prefetch" href="/lanjz/assets/js/33.8cb76a63.js"><link rel="prefetch" href="/lanjz/assets/js/34.b460535c.js"><link rel="prefetch" href="/lanjz/assets/js/35.b587af0e.js"><link rel="prefetch" href="/lanjz/assets/js/36.564fdbca.js"><link rel="prefetch" href="/lanjz/assets/js/37.e4f67436.js"><link rel="prefetch" href="/lanjz/assets/js/38.783d74f3.js"><link rel="prefetch" href="/lanjz/assets/js/39.6a2866e8.js"><link rel="prefetch" href="/lanjz/assets/js/4.3802e1cb.js"><link rel="prefetch" href="/lanjz/assets/js/40.80adca89.js"><link rel="prefetch" href="/lanjz/assets/js/41.4a9f3cb1.js"><link rel="prefetch" href="/lanjz/assets/js/42.72b6f021.js"><link rel="prefetch" href="/lanjz/assets/js/43.148b109f.js"><link rel="prefetch" href="/lanjz/assets/js/44.2904b577.js"><link rel="prefetch" href="/lanjz/assets/js/45.f8e64a75.js"><link rel="prefetch" href="/lanjz/assets/js/46.194cdd2c.js"><link rel="prefetch" href="/lanjz/assets/js/47.d7a1eee7.js"><link rel="prefetch" href="/lanjz/assets/js/48.254a8390.js"><link rel="prefetch" href="/lanjz/assets/js/49.608068d2.js"><link rel="prefetch" href="/lanjz/assets/js/5.1a6efd45.js"><link rel="prefetch" href="/lanjz/assets/js/50.49cd15c3.js"><link rel="prefetch" href="/lanjz/assets/js/51.cb53513a.js"><link rel="prefetch" href="/lanjz/assets/js/52.f42dc47b.js"><link rel="prefetch" href="/lanjz/assets/js/53.56437649.js"><link rel="prefetch" href="/lanjz/assets/js/54.ecce13a5.js"><link rel="prefetch" href="/lanjz/assets/js/55.f959dee2.js"><link rel="prefetch" href="/lanjz/assets/js/56.f89d43e4.js"><link rel="prefetch" href="/lanjz/assets/js/57.8f464cda.js"><link rel="prefetch" href="/lanjz/assets/js/58.ef375410.js"><link rel="prefetch" href="/lanjz/assets/js/59.53a5b9c7.js"><link rel="prefetch" href="/lanjz/assets/js/6.2a3529f7.js"><link rel="prefetch" href="/lanjz/assets/js/60.0305f44c.js"><link rel="prefetch" href="/lanjz/assets/js/61.f31f117a.js"><link rel="prefetch" href="/lanjz/assets/js/62.fe5ce2e9.js"><link rel="prefetch" href="/lanjz/assets/js/63.8030cc72.js"><link rel="prefetch" href="/lanjz/assets/js/64.a3d68b22.js"><link rel="prefetch" href="/lanjz/assets/js/65.a5d90b8a.js"><link rel="prefetch" href="/lanjz/assets/js/66.ee0baed7.js"><link rel="prefetch" href="/lanjz/assets/js/67.5d18a7e8.js"><link rel="prefetch" href="/lanjz/assets/js/68.3facc0ae.js"><link rel="prefetch" href="/lanjz/assets/js/69.d49b6c44.js"><link rel="prefetch" href="/lanjz/assets/js/7.253748fb.js"><link rel="prefetch" href="/lanjz/assets/js/70.60ec57bb.js"><link rel="prefetch" href="/lanjz/assets/js/71.646675d3.js"><link rel="prefetch" href="/lanjz/assets/js/72.cda11d39.js"><link rel="prefetch" href="/lanjz/assets/js/73.aa566793.js"><link rel="prefetch" href="/lanjz/assets/js/74.154b4dc1.js"><link rel="prefetch" href="/lanjz/assets/js/75.eb188cde.js"><link rel="prefetch" href="/lanjz/assets/js/76.f3c7f69a.js"><link rel="prefetch" href="/lanjz/assets/js/77.25c12eab.js"><link rel="prefetch" href="/lanjz/assets/js/78.212c7733.js"><link rel="prefetch" href="/lanjz/assets/js/79.79a74859.js"><link rel="prefetch" href="/lanjz/assets/js/8.00723369.js"><link rel="prefetch" href="/lanjz/assets/js/80.737c4f47.js"><link rel="prefetch" href="/lanjz/assets/js/81.b7a30849.js"><link rel="prefetch" href="/lanjz/assets/js/82.665aa383.js"><link rel="prefetch" href="/lanjz/assets/js/83.2dcf80f9.js"><link rel="prefetch" href="/lanjz/assets/js/84.eb8f6658.js"><link rel="prefetch" href="/lanjz/assets/js/85.95290bd7.js"><link rel="prefetch" href="/lanjz/assets/js/86.10516fe4.js"><link rel="prefetch" href="/lanjz/assets/js/87.cc609da2.js"><link rel="prefetch" href="/lanjz/assets/js/88.df7752b2.js"><link rel="prefetch" href="/lanjz/assets/js/89.e1c531e9.js"><link rel="prefetch" href="/lanjz/assets/js/9.01bf6833.js"><link rel="prefetch" href="/lanjz/assets/js/90.198aafd0.js"><link rel="prefetch" href="/lanjz/assets/js/91.a52d269d.js"><link rel="prefetch" href="/lanjz/assets/js/92.2be95a27.js"><link rel="prefetch" href="/lanjz/assets/js/94.508edcd5.js"><link rel="prefetch" href="/lanjz/assets/js/95.21ac0aec.js"><link rel="prefetch" href="/lanjz/assets/js/96.dba7c5cf.js"><link rel="prefetch" href="/lanjz/assets/js/97.8006f58a.js"><link rel="prefetch" href="/lanjz/assets/js/98.881109d8.js"><link rel="prefetch" href="/lanjz/assets/js/99.05dfcb7b.js">
+    <link rel="stylesheet" href="/lanjz/assets/css/0.styles.5dda244b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/lanjz/" class="home-link router-link-active"><!----> <span class="site-name">Hello Wold</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/lanjz/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/JavaScript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/HTML5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Browser/" class="nav-link">
+  Browser
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络&amp;算法" class="dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络&amp;算法" class="mobile-dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/secure/" class="nav-link">
+  Web安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Vue3/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/qiankun/" class="nav-link">
+  qiankun
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/NA/" class="nav-link">
+  跨平台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Node/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Api/" class="nav-link">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Package/" class="nav-link">
+  yarn&amp;npm
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端优化总结/" class="nav-link">
+  前端优化总结
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/系统设计/" class="nav-link">
+  系统设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/预加载&amp;预解析.html" class="nav-link">
+  预加载&amp;预解析
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/重构改善既有代码的设计.html" class="nav-link">
+  重构代码原则
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/开发与调试技巧.html" class="nav-link">
+  开发与调试
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/组件设计的基本原则.html" class="nav-link">
+  组件设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/公共模块管理.html" class="nav-link">
+  公共模块管理
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/内存泄漏.html" class="nav-link">
+  内存泄漏
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端异常捕获.html" class="nav-link">
+  前端异常捕获
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/自动化部署.html" class="nav-link">
+  自动化部署
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/疑难杂症.html" class="nav-link">
+  疑难杂症
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="利其器" class="dropdown-title"><span class="title">利其器</span> <span class="arrow down"></span></button> <button type="button" aria-label="利其器" class="mobile-dropdown-title"><span class="title">利其器</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Mac.html" class="nav-link">
+  Mac
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Github.html" class="nav-link">
+  Github
+</a></li></ul></div></div><div class="nav-item"><a href="/lanjz/Im/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/lanjz/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/JavaScript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/HTML5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Browser/" class="nav-link">
+  Browser
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络&amp;算法" class="dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络&amp;算法" class="mobile-dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/secure/" class="nav-link">
+  Web安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Vue3/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/qiankun/" class="nav-link">
+  qiankun
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/NA/" class="nav-link">
+  跨平台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Node/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Api/" class="nav-link">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Package/" class="nav-link">
+  yarn&amp;npm
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端优化总结/" class="nav-link">
+  前端优化总结
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/系统设计/" class="nav-link">
+  系统设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/预加载&amp;预解析.html" class="nav-link">
+  预加载&amp;预解析
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/重构改善既有代码的设计.html" class="nav-link">
+  重构代码原则
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/开发与调试技巧.html" class="nav-link">
+  开发与调试
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/组件设计的基本原则.html" class="nav-link">
+  组件设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/公共模块管理.html" class="nav-link">
+  公共模块管理
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/内存泄漏.html" class="nav-link">
+  内存泄漏
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端异常捕获.html" class="nav-link">
+  前端异常捕获
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/自动化部署.html" class="nav-link">
+  自动化部署
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/疑难杂症.html" class="nav-link">
+  疑难杂症
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="利其器" class="dropdown-title"><span class="title">利其器</span> <span class="arrow down"></span></button> <button type="button" aria-label="利其器" class="mobile-dropdown-title"><span class="title">利其器</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Mac.html" class="nav-link">
+  Mac
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Github.html" class="nav-link">
+  Github
+</a></li></ul></div></div><div class="nav-item"><a href="/lanjz/Im/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/lanjz/JavaScript/JS基础.html" class="sidebar-link">JS基础</a></li><li><a href="/lanjz/JavaScript/JS核心.html" class="sidebar-link">JS执行机制</a></li><li><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html" class="active sidebar-link">编写高质量JavaScript代码的基本要点</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#最小全局变量-minimizing-globals" class="sidebar-link">最小全局变量(Minimizing Globals)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#忘记var导致的副作用-side-effects-when-forgetting-var" class="sidebar-link">忘记var导致的副作用(Side Effects When Forgetting var)</a></li></ul></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#for循环-for-loops" class="sidebar-link">for循环(for Loops)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#for-in循环-for-in-loops" class="sidebar-link">for-in循环(for-in Loops)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#不扩展内置原型-not-augmenting-built-in-prototypes" class="sidebar-link">不扩展内置原型((Not) Augmenting Built-in Prototypes)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#switch模式-switch-pattern" class="sidebar-link">switch模式(switch Pattern)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#避免隐式类型转换-avoiding-implied-typecasting" class="sidebar-link">避免隐式类型转换(Avoiding Implied Typecasting )</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#避免-avoiding-eval" class="sidebar-link">避免(Avoiding) eval()</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#parseint-下的数值转换-number-conversions-with-parseint" class="sidebar-link">parseInt()下的数值转换(Number Conversions with parseInt())</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#编码规范-coding-conventions" class="sidebar-link">编码规范(Coding Conventions)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#缩进-indentation" class="sidebar-link">缩进(Indentation)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#空格-white-space" class="sidebar-link">空格(White Space)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#命名规范-naming-conventions" class="sidebar-link">命名规范(Naming Conventions)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#其它命名形式-other-naming-patterns" class="sidebar-link">其它命名形式(Other Naming Patterns)</a></li><li class="sidebar-sub-header"><a href="/lanjz/JavaScript/编写高质量JavaScript代码的基本要点.html#注释-writing-comments" class="sidebar-link">注释(Writing Comments)</a></li></ul></li><li><a href="/lanjz/JavaScript/函数.html" class="sidebar-link">函数</a></li><li><a href="/lanjz/JavaScript/全面解析Module模式.html" class="sidebar-link">全面解析Module模式</a></li><li><a href="/lanjz/JavaScript/闭包.html" class="sidebar-link">闭包</a></li><li><a href="/lanjz/JavaScript/设计模式.html" class="sidebar-link">设计模式</a></li><li><a href="/lanjz/JavaScript/对象创建模式.html" class="sidebar-link">对象创建模式</a></li><li><a href="/lanjz/JavaScript/JS面象对象.html" class="sidebar-link">JS 面向对象编程</a></li><li><a href="/lanjz/JavaScript/正则.html" class="sidebar-link">正则</a></li><li><a href="/lanjz/JavaScript/吱不吱.html" class="sidebar-link">问答</a></li><li><a href="/lanjz/JavaScript/代码实现.html" class="sidebar-link">代码实现</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="编写高质量javascript代码的基本要点"><a href="#编写高质量javascript代码的基本要点" class="header-anchor">#</a> 编写高质量JavaScript代码的基本要点</h1> <p>可维护的代码意味着：</p> <ul><li><p>可读的</p></li> <li><p>一致的</p></li> <li><p>可预测的</p></li> <li><p>看上去就像是同一个人写的</p></li></ul> <h2 id="最小全局变量-minimizing-globals"><a href="#最小全局变量-minimizing-globals" class="header-anchor">#</a> 最小全局变量(Minimizing Globals)</h2> <p>全局变量的问题在于，你的 JavaScript 应用程序和web页面上的所有代码都共享了这些全局变量，他们住在同一个全局命名空间，所以当程序的两个不同部分定义同名但不同作用的全局变量的时候，命名冲突在所难免</p> <p>由于 JavaScript 的两个特征，不自觉地创建出全局变量是出乎意料的容易。首先，你可以甚至不需要声明就可以使用变量；第二，JavaScript 有隐含的全局概念，意味着你不声明的任何变量都会成为一个全局对象属性。参考下面的代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// 不推荐写法: 隐式全局变量 </span>
+   result <span class="token operator">=</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+   <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此段代码中的 <code>result</code> 没有声明。代码照样运作正常，但在调用函数后你最后的结果就多一个全局命名空间，这可以是一个问题的根源。</p> <p>所以始终使用 <code>var</code> 声明变量，正如改进版的 <code>sum()</code> 函数所演示的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">var</span> result <span class="token operator">=</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+   <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>另一个创建隐式全局变量的反例就是使用任务链进行部分 <code>var</code> 声明。下面的片段中， <code>a</code> 是本地变量但是b确实全局变量，这可能不是你希望发生的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 反例，勿使用 </span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">var</span> a <span class="token operator">=</span> b <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+   <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此现象发生的原因在于这个从右到左的赋值，首先，是赋值表达式 <code>b = 0</code> ，此情况下 <code>b</code> 是未声明的。这个表达式的返回值是 <code>0</code> ，然后这个 <code>0</code> 就分配给了通过 <code>var</code> 定义的这个局部变量 <code>a</code> 。换句话说，就好比你输入了：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">(</span>b <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>如果你已经准备好声明变量，使用链分配是比较好的做法，不会产生任何意料之外的全局变量，如:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">var</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+   <span class="token comment">// ... a = b = 0; // 两个均局部变量</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>另外一个避免全局变量的原因是可移植性。如果你想你的代码在不同的环境下（主机下）运行，使用全局变量如履薄冰，因为你会无意中覆盖你最初环境下不存在的主机对象</p> <h3 id="忘记var导致的副作用-side-effects-when-forgetting-var"><a href="#忘记var导致的副作用-side-effects-when-forgetting-var" class="header-anchor">#</a> 忘记<code>var</code>导致的副作用(Side Effects When Forgetting var)</h3> <p>隐式全局变量和明确定义的全局变量间有些小的差异，就是通过<code>delete</code>操作符让变量未定义的能力</p> <ul><li><p>通过 <code>var</code> 创建的全局变量（任何函数之外的程序中创建）是不能被删除的。</p></li> <li><p>无 <code>var</code> 创建的隐式全局变量（无视是否在函数中创建）是能被删除的</p></li></ul> <p>这表明，在技术上，隐式全局变量并不是真正的全局变量，但它们是全局对象的属性。属性是可以通过 <code>delete</code> 操作符删除的，而变量是不能的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 定义三个全局变量</span>
+<span class="token keyword">var</span> global_var <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+global_novar <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// 反面教材</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   global_fromfunc <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">// 反面教材</span>
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 试图删除</span>
+<span class="token keyword">delete</span> global_var<span class="token punctuation">;</span> <span class="token comment">// false</span>
+<span class="token keyword">delete</span> global_novar<span class="token punctuation">;</span> <span class="token comment">// true</span>
+<span class="token keyword">delete</span> global_fromfunc<span class="token punctuation">;</span> <span class="token comment">// true</span>
+
+<span class="token comment">// 测试该删除</span>
+<span class="token keyword">typeof</span> global_var<span class="token punctuation">;</span> <span class="token comment">// &quot;number&quot;</span>
+<span class="token keyword">typeof</span> global_novar<span class="token punctuation">;</span> <span class="token comment">// &quot;undefined&quot;</span>
+<span class="token keyword">typeof</span> global_fromfunc<span class="token punctuation">;</span> <span class="token comment">// &quot;undefined&quot;</span>
+</code></pre></div><p>在ES5严格模式下，未声明的变量（如在前面的代码片段中的两个反面教材）工作时会抛出一个错误。</p> <h2 id="for循环-for-loops"><a href="#for循环-for-loops" class="header-anchor">#</a> for循环(for Loops)</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> myarray<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// 使用myarray[i]做点什么</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这种形式的循环的不足在于每次循环的时候数组的长度都要去获取下。这回降低你的代码，尤其当 <code>myarray</code> 不是数组，而是一个 <code>HTMLCollection</code> 对象的时候(DOM操作一般都是比较昂贵的).</p> <p>所以当你循环获取值时，缓存数组(或集合)的长度是比较好的形式，正如下面代码显示的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> max <span class="token operator">=</span> myarray<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> max<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// 使用myarray[i]做点什么</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这样，在这个循环过程中，你只检索了一次长度值</p> <h2 id="for-in循环-for-in-loops"><a href="#for-in循环-for-in-loops" class="header-anchor">#</a> for-in循环(for-in Loops)</h2> <p><code>for-in</code> 循环应该用在非数组对象的遍历上，使用 <code>for-in</code> 进行循环也被称为“枚举”</p> <p>从技术上将，你可以使用 <code>for-in</code> 循环数组（因为JavaScript中数组也是对象），但这是不推荐的。因为如果数组对象已被自定义的功能增强，就可能发生逻辑错误。另外，在 <code>for-in</code> 中，属性列表的顺序（序列）是不能保证的。所以最好数组使用正常的 <code>for</code> 循环，对象使用 <code>for-in</code> 循环</p> <p>有个很重要的 <code>hasOwnProperty()</code> 方法，当遍历对象属性的时候可以过滤掉从原型链上下来的属性</p> <p>思考下面一段代码:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 对象</span>
+<span class="token keyword">var</span> man <span class="token operator">=</span> <span class="token punctuation">{</span>
+   hands<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+   legs<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+   heads<span class="token operator">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 在代码的某个地方</span>
+<span class="token comment">// 一个方法添加给了所有对象</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>clone <span class="token operator">===</span> <span class="token string">&quot;undefined&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">clone</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这个例子中，我们有一个使用对象字面量定义的名叫 <code>man</code> 的对象。在 <code>man</code> 定义完成后的某个地方，在对象原型上增加了一个很有用的名叫 <code>clone()</code> 的方法。此原型链是实时的，这就意味着所有的对象自动可以访问新的方法。为了避免枚举 <code>man</code> 的时候出现 <code>clone()</code> 方法，你需要应用 <code>hasOwnProperty()</code> 方法过滤原型属性。如果不做过滤，会导致 <code>clone()</code> 函数显示出来，在大多数情况下这是不希望出现的</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 1.</span>
+<span class="token comment">// for-in 循环</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token keyword">in</span> man<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>man<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 过滤</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token string">&quot;:&quot;</span><span class="token punctuation">,</span> man<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/* 控制台显示结果
+hands : 2
+legs : 2
+heads : 1
+*/</span>
+<span class="token comment">// 2.</span>
+<span class="token comment">// 反面例子:</span>
+<span class="token comment">// for-in loop without checking hasOwnProperty()</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token keyword">in</span> man<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token string">&quot;:&quot;</span><span class="token punctuation">,</span> man<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*
+控制台显示结果
+hands : 2
+legs : 2
+heads : 1
+clone: function()
+*/</span>
+
+</code></pre></div><h2 id="不扩展内置原型-not-augmenting-built-in-prototypes"><a href="#不扩展内置原型-not-augmenting-built-in-prototypes" class="header-anchor">#</a> 不扩展内置原型((Not) Augmenting Built-in Prototypes)</h2> <p>扩增构造函数的 <code>prototype</code> 属性是个很强大的增加功能的方法，但有时候它太强大了。</p> <p>增加内置的构造函数原型（如 <code>Object()</code> , <code>Array()</code> , 或 <code>Function()</code> ）挺诱人的，但是这严重降低了可维护性，因为它让你的代码变得难以预测。使用你代码的其他开发人员很可能更期望使用内置的 JavaScript 方法来持续不断地工作，而不是你另加的方法</p> <p>另外，属性添加到原型中，可能会导致不使用 <code>hasOwnProperty</code> 属性时在循环中显示出来，这会造成混乱</p> <p>因此，不增加内置原型是最好的。你可以指定一个规则，仅当下面的条件均满足时例外：</p> <ul><li><p>可以预期将来的 ECMAScript 版本或是 JavaScript 实现将一直将此功能当作内置方法来实现。例如，你可以添加 ECMAScript 5 中描述的方法，一直到各个浏览器都迎头赶上。这种情况下，你只是提前定义了有用的方法</p></li> <li><p>如果您检查您的自定义属性或方法已不存在——也许已经在代码的其他地方实现或已经是你支持的浏览器 JavaScript 引擎部分</p></li> <li><p>你清楚地文档记录并和团队交流了变化</p></li></ul> <p>如果这三个条件得到满足，你可以给原型进行自定义的添加，形式如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> Object<span class="token punctuation">.</span>protoype<span class="token punctuation">.</span>myMethod <span class="token operator">!==</span> <span class="token string">&quot;function&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   Object<span class="token punctuation">.</span>protoype<span class="token punctuation">.</span><span class="token function-variable function">myMethod</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 实现...</span>
+   <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="switch模式-switch-pattern"><a href="#switch模式-switch-pattern" class="header-anchor">#</a> switch模式(switch Pattern)</h2> <p>你可以通过类似下面形式的 <code>switch</code> 语句增强可读性和健壮性:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> inspect_me <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    result <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+<span class="token keyword">switch</span> <span class="token punctuation">(</span>inspect_me<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span>
+   result <span class="token operator">=</span> <span class="token string">&quot;zero&quot;</span><span class="token punctuation">;</span>
+   <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+   result <span class="token operator">=</span> <span class="token string">&quot;one&quot;</span><span class="token punctuation">;</span>
+   <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token keyword">default</span><span class="token operator">:</span>
+   result <span class="token operator">=</span> <span class="token string">&quot;unknown&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这个简单的例子中所遵循的风格约定如下：</p> <ul><li><p>每个<code>case</code>和<code>switch</code>对齐（花括号缩进规则除外）</p></li> <li><p>每个<code>case</code>中代码缩进</p></li> <li><p>每个<code>case</code>以<code>break</code>清除结束</p></li> <li><p>避免贯穿（故意忽略<code>break</code>）。如果你非常确信贯穿是最好的方法，务必记录此情况，因为对于有些阅读人而言，它们可能看起来是错误的</p></li> <li><p>以<code>default</code>结束<code>switch</code>：确保总有健全的结果，即使无情况匹配</p></li></ul> <h2 id="避免隐式类型转换-avoiding-implied-typecasting"><a href="#避免隐式类型转换-avoiding-implied-typecasting" class="header-anchor">#</a> 避免隐式类型转换(Avoiding Implied Typecasting )</h2> <p>JavaScript的变量在比较的时候会隐式类型转换。这就是为什么一些诸如：<code>false == 0</code> 或 <code>“” == 0</code> 返回的结果是 <code>true</code> 。为避免引起混乱的隐含类型转换，在你比较值和表达式类型的时候始终使用 <code>===</code> 和 <code>!==</code> 操作符。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> zero <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>zero <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// 不执行，因为zero为0, 而不是false</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 反面示例</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>zero <span class="token operator">==</span> <span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// 执行了...</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="避免-avoiding-eval"><a href="#避免-avoiding-eval" class="header-anchor">#</a> 避免(Avoiding) eval()</h2> <p><code>eval()</code> 有安全隐患，因为被执行的代码可能已被篡改，比如盗取 <code>Cookie</code></p> <p>给 <code>setInterval()</code>, <code>setTimeout()</code> 和 <code>Function()</code> 构造函数传递字符串时，与使用 <code>eval()</code> 是类似的，因此要避免使用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 反面示例</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token string">&quot;myFunc()&quot;</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token string">&quot;myFunc(1, 2, 3)&quot;</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 更好的</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span>myFunc<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>如果必须使用 <code>eval()</code> ，可以考虑使用 <code>new Function()</code> 代替。因为在 <code>Function()</code> 中的代码是在局部函数作用域中运行，所以代码中任何通过 <code>var</code> 定义的变量都不会自动变成全局变量。另一种方法来阻止自动全局变量是封装 <code>eval()</code> 调用到一个即时函数中。</p> <p>考虑下面这个例子，这里仅 <code>un</code> 作为全局变量污染了命名空间。</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> un<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// &quot;undefined&quot;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> deux<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;undefined&quot;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> trois<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;undefined&quot;</span>
+
+<span class="token keyword">var</span> jsstring <span class="token operator">=</span> <span class="token string">&quot;var un = 1; console.log(un);&quot;</span><span class="token punctuation">;</span>
+<span class="token function">eval</span><span class="token punctuation">(</span>jsstring<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// logs &quot;1&quot;</span>
+
+jsstring <span class="token operator">=</span> <span class="token string">&quot;var deux = 2; console.log(deux);&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">new</span> <span class="token class-name">Function</span><span class="token punctuation">(</span>jsstring<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// logs &quot;2&quot;</span>
+
+jsstring <span class="token operator">=</span> <span class="token string">&quot;var trois = 3; console.log(trois);&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token function">eval</span><span class="token punctuation">(</span>jsstring<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// logs &quot;3&quot;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> un<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// number</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> deux<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;undefined&quot;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> trois<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;undefined&quot;</span>
+</code></pre></div><p><code>eval()</code> 和 <code>Function</code> 还有一个不同点是 <code>eval()</code> 可以干扰作用域链，而 <code>Function()</code> 更安分守己些。不管你在哪里执行 <code>Function()</code> ，它只看到全局作用域。所以其能很好的避免本地变量污染。在下面这个例子中，<code>eval()</code> 可以访问和修改它外部作用域中的变量</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">var</span> local <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+   <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">&quot;local = 3; console.log(local)&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// logs &quot;3&quot;</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>local<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// logs &quot;3&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">var</span> local <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+   <span class="token function">Function</span><span class="token punctuation">(</span><span class="token string">&quot;console.log(typeof local);&quot;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// logs undefined</span>
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="parseint-下的数值转换-number-conversions-with-parseint"><a href="#parseint-下的数值转换-number-conversions-with-parseint" class="header-anchor">#</a> parseInt()下的数值转换(Number Conversions with parseInt())</h2> <p>使用 <code>parseInt()</code> 你可以从字符串中获取数值，该方法接受另一个基数参数，这经常省略，但不应该。当字符串以 <code>&quot;0&quot;</code> 开头的时候就有可能会出问题，例如时间进入表单域，在ECMAScript 3 中，开头为 <code>&quot;0&quot;</code> 的字符串被当做 8进制 处理了，但这已在 ECMAScript 5 中改变了。为了避免矛盾和意外的结果，总是指定基数参数准没错</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> month <span class="token operator">=</span> <span class="token string">&quot;06&quot;</span><span class="token punctuation">,</span>
+    year <span class="token operator">=</span> <span class="token string">&quot;09&quot;</span><span class="token punctuation">;</span>
+month <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>month<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+year <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>year<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>此例中，如果你忽略了基数参数，如 <code>parseInt(year)</code> ，返回的值将是 <code>0</code>，因为 <code>09</code> 被当做 <code>8</code> 进制（好比执行 <code>parseInt( year, 8 )）</code>，而 <code>09</code> 在 <code>8</code> 进制中不是个有效数字</p> <p>替换方法是将字符串转换成数字，包括：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">+</span><span class="token string">&quot;08&quot;</span> <span class="token comment">// 结果是 8</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">&quot;08&quot;</span><span class="token punctuation">)</span> <span class="token comment">// 8</span>
+</code></pre></div><p>这些通常快于 <code>parseInt()</code> ，因为 <code>parseInt()</code> 方法，顾名思意，不是简单地解析与转换。但是，如果你想输入例如 <code>08 hello</code>， <code>parseInt()</code> 将返回数字，而其它以 <code>NaN</code> 告终</p> <h2 id="编码规范-coding-conventions"><a href="#编码规范-coding-conventions" class="header-anchor">#</a> 编码规范(Coding Conventions)</h2> <h2 id="缩进-indentation"><a href="#缩进-indentation" class="header-anchor">#</a> 缩进(Indentation)</h2> <h2 id="空格-white-space"><a href="#空格-white-space" class="header-anchor">#</a> 空格(White Space)</h2> <p>空格的使用同样有助于改善代码的可读性和一致性</p> <p>适合使用空格的地方包括：</p> <ul><li><p><code>for</code> 循环分号分开后的的部分：如 <code>for (var i = 0; i &lt; 10; i += 1) {...}</code></p></li> <li><p><code>for</code> 循环中初始化的多变量( <code>i</code> 和 <code>max</code> )：<code>for (var i = 0, max = 10; i &lt; max; i += 1) {...}</code></p></li> <li><p>分隔数组项的逗号的后面：<code>var a = [1, 2, 3]</code></p></li> <li><p>对象属性逗号的后面以及分隔属性名和属性值的冒号的后面：<code>var o = {a: 1, b: 2}</code></p></li> <li><p>限定函数参数：<code>myFunc(a, b, c)</code></p></li> <li><p>函数声明的花括号的前面：<code>function myFunc() {}</code></p></li> <li><p>匿名函数表达式 <code>function</code> 的后面：<code>var myFunc = function () {}</code></p></li></ul> <p>使用空格分开所有的操作符和操作对象是另一个不错的使用，这意味着在 <code>+, -, *, =, &lt;, &gt;, &lt;=, &gt;=, ===, !==, &amp;&amp;, ||, +=</code> 等前后都需要空格</p> <p>最后需要注意的一个空格——花括号间距。最好使用空格：</p> <ul><li><p>函数、<code>if-else</code> 语句、循环、对象字面量的左花括号的前面 <code>({)</code></p></li> <li><p><code>else</code> 或 <code>while</code> 之间的右花括号 <code>(})</code></p></li></ul> <p>空格使用的一点不足就是增加了文件的大小，但是压缩无此问题</p> <h2 id="命名规范-naming-conventions"><a href="#命名规范-naming-conventions" class="header-anchor">#</a> 命名规范(Naming Conventions)</h2> <p><strong>以大写字母写构造函数(Capitalizing Constructors)</strong></p> <p><strong>驼峰(Camel)命名法</strong></p> <p>当你的变量或是函数名是由多个单词组成的时候，最好“驼峰(Camel)命名法”，就是单词小写，每个单词的首字母大写</p> <p>对于构造函数，可以使用大驼峰式命名法(upper camel case)，如 <code>MyConstructor()</code> ;对于函数和方法名称，你可以使用小驼峰式命名法(lower camel case)，像是 <code>myFunction()</code> , <code>calculateArea()</code> 和 <code>getFirstName()</code></p> <h2 id="其它命名形式-other-naming-patterns"><a href="#其它命名形式-other-naming-patterns" class="header-anchor">#</a> 其它命名形式(Other Naming Patterns)</h2> <p>JavaScript中没有定义常量的方法，所以开发者都采用全部单词大写的规范来命名这个程序生命周期中都不会改变的变量，如</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 珍贵常数，只可远观</span>
+<span class="token keyword">var</span> <span class="token constant">PI</span> <span class="token operator">=</span> <span class="token number">3.14</span><span class="token punctuation">,</span>
+    <span class="token constant">MAX_WIDTH</span> <span class="token operator">=</span> <span class="token number">80</span>
+</code></pre></div><h2 id="注释-writing-comments"><a href="#注释-writing-comments" class="header-anchor">#</a> 注释(Writing Comments)</h2> <p>你必须注释你的代码，即使不会有其他人向你一样接触它。通常，当你深入研究一个问题，你会很清楚的知道这个代码是干嘛用的，但是，当你一周之后再回来看的时候，想必也要耗掉不少脑细胞去搞明白到底怎么工作的。</p> <p>很显然，注释不能走极端：每个单独变量或是单独一行。但是，你通常应该记录所有的函数，它们的参数和返回值，或是任何不寻常的技术和方法。要想到注释可以给你代码未来的阅读者以诸多提示；阅读者需要的是（不要读太多的东西）仅注释和函数属性名来理解你的代码。例如，当你有五六行程序执行特定的任务， 如果你提供了一行代码目的以及为什么在这里的描述的话，阅读者就可以直接跳过这段细节。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/lanjz/JavaScript/JS核心.html" class="prev">
+        JS执行机制
+      </a></span> <span class="next"><a href="/lanjz/JavaScript/函数.html">
+        函数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/lanjz/assets/js/app.193a95f5.js" defer></script><script src="/lanjz/assets/js/2.42578501.js" defer></script><script src="/lanjz/assets/js/93.60eb3f72.js" defer></script>
+  </body>
+</html>

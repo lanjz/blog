@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>$nextTick | Hello Wold</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/lanjz/assets/css/0.styles.5dda244b.css" as="style"><link rel="preload" href="/lanjz/assets/js/app.193a95f5.js" as="script"><link rel="preload" href="/lanjz/assets/js/2.42578501.js" as="script"><link rel="preload" href="/lanjz/assets/js/137.7976d756.js" as="script"><link rel="prefetch" href="/lanjz/assets/js/10.9907508f.js"><link rel="prefetch" href="/lanjz/assets/js/100.b14bf8fc.js"><link rel="prefetch" href="/lanjz/assets/js/101.f9c937ea.js"><link rel="prefetch" href="/lanjz/assets/js/102.957055bb.js"><link rel="prefetch" href="/lanjz/assets/js/103.765b2360.js"><link rel="prefetch" href="/lanjz/assets/js/104.f3783334.js"><link rel="prefetch" href="/lanjz/assets/js/105.26c069dd.js"><link rel="prefetch" href="/lanjz/assets/js/106.24856bd1.js"><link rel="prefetch" href="/lanjz/assets/js/107.16d52016.js"><link rel="prefetch" href="/lanjz/assets/js/108.a8da0212.js"><link rel="prefetch" href="/lanjz/assets/js/109.15e515a4.js"><link rel="prefetch" href="/lanjz/assets/js/11.e4b14a76.js"><link rel="prefetch" href="/lanjz/assets/js/110.34c3059c.js"><link rel="prefetch" href="/lanjz/assets/js/111.009a8f1a.js"><link rel="prefetch" href="/lanjz/assets/js/112.d0f10748.js"><link rel="prefetch" href="/lanjz/assets/js/113.10b6bcab.js"><link rel="prefetch" href="/lanjz/assets/js/114.9bb13627.js"><link rel="prefetch" href="/lanjz/assets/js/115.28fa24db.js"><link rel="prefetch" href="/lanjz/assets/js/116.b1428667.js"><link rel="prefetch" href="/lanjz/assets/js/117.3250ac7f.js"><link rel="prefetch" href="/lanjz/assets/js/118.77422feb.js"><link rel="prefetch" href="/lanjz/assets/js/119.c66d8f31.js"><link rel="prefetch" href="/lanjz/assets/js/12.963df404.js"><link rel="prefetch" href="/lanjz/assets/js/120.3a911de0.js"><link rel="prefetch" href="/lanjz/assets/js/121.07053828.js"><link rel="prefetch" href="/lanjz/assets/js/122.f34a42b3.js"><link rel="prefetch" href="/lanjz/assets/js/123.b2890fc0.js"><link rel="prefetch" href="/lanjz/assets/js/124.d5568815.js"><link rel="prefetch" href="/lanjz/assets/js/125.04753703.js"><link rel="prefetch" href="/lanjz/assets/js/126.2002abeb.js"><link rel="prefetch" href="/lanjz/assets/js/127.046a1680.js"><link rel="prefetch" href="/lanjz/assets/js/128.b9b06ae8.js"><link rel="prefetch" href="/lanjz/assets/js/129.37af1a36.js"><link rel="prefetch" href="/lanjz/assets/js/13.5f293994.js"><link rel="prefetch" href="/lanjz/assets/js/130.556758a5.js"><link rel="prefetch" href="/lanjz/assets/js/131.983b0b69.js"><link rel="prefetch" href="/lanjz/assets/js/132.22594a9c.js"><link rel="prefetch" href="/lanjz/assets/js/133.a29c6e49.js"><link rel="prefetch" href="/lanjz/assets/js/134.ae121128.js"><link rel="prefetch" href="/lanjz/assets/js/135.9530e173.js"><link rel="prefetch" href="/lanjz/assets/js/136.b383527a.js"><link rel="prefetch" href="/lanjz/assets/js/138.9af8fb15.js"><link rel="prefetch" href="/lanjz/assets/js/139.4795c02c.js"><link rel="prefetch" href="/lanjz/assets/js/14.f8b5c7e1.js"><link rel="prefetch" href="/lanjz/assets/js/140.16232cab.js"><link rel="prefetch" href="/lanjz/assets/js/141.a8825489.js"><link rel="prefetch" href="/lanjz/assets/js/142.c8ef20d9.js"><link rel="prefetch" href="/lanjz/assets/js/143.ed4a2ca5.js"><link rel="prefetch" href="/lanjz/assets/js/144.c62073b9.js"><link rel="prefetch" href="/lanjz/assets/js/145.cc42d920.js"><link rel="prefetch" href="/lanjz/assets/js/146.3719d1b2.js"><link rel="prefetch" href="/lanjz/assets/js/147.13d96163.js"><link rel="prefetch" href="/lanjz/assets/js/148.f16eb171.js"><link rel="prefetch" href="/lanjz/assets/js/149.920c2148.js"><link rel="prefetch" href="/lanjz/assets/js/15.67188da4.js"><link rel="prefetch" href="/lanjz/assets/js/150.7bacdb5d.js"><link rel="prefetch" href="/lanjz/assets/js/151.b9b60736.js"><link rel="prefetch" href="/lanjz/assets/js/152.e4ecd542.js"><link rel="prefetch" href="/lanjz/assets/js/153.64adb680.js"><link rel="prefetch" href="/lanjz/assets/js/154.3819ff30.js"><link rel="prefetch" href="/lanjz/assets/js/155.94b72b2e.js"><link rel="prefetch" href="/lanjz/assets/js/156.58a653d8.js"><link rel="prefetch" href="/lanjz/assets/js/157.59e134d3.js"><link rel="prefetch" href="/lanjz/assets/js/158.66d4ed01.js"><link rel="prefetch" href="/lanjz/assets/js/159.12ac079f.js"><link rel="prefetch" href="/lanjz/assets/js/16.a7b92bb3.js"><link rel="prefetch" href="/lanjz/assets/js/160.2f0e5eff.js"><link rel="prefetch" href="/lanjz/assets/js/161.a1f34066.js"><link rel="prefetch" href="/lanjz/assets/js/162.89b54ae7.js"><link rel="prefetch" href="/lanjz/assets/js/163.35f44c6b.js"><link rel="prefetch" href="/lanjz/assets/js/164.a24b2f98.js"><link rel="prefetch" href="/lanjz/assets/js/165.d08d83bb.js"><link rel="prefetch" href="/lanjz/assets/js/166.d6fe2283.js"><link rel="prefetch" href="/lanjz/assets/js/167.01ddb2b1.js"><link rel="prefetch" href="/lanjz/assets/js/168.3112dd8f.js"><link rel="prefetch" href="/lanjz/assets/js/169.7bebfe48.js"><link rel="prefetch" href="/lanjz/assets/js/17.9d035f99.js"><link rel="prefetch" href="/lanjz/assets/js/170.ba7efa85.js"><link rel="prefetch" href="/lanjz/assets/js/171.2e12ba84.js"><link rel="prefetch" href="/lanjz/assets/js/172.087979db.js"><link rel="prefetch" href="/lanjz/assets/js/173.180fbff0.js"><link rel="prefetch" href="/lanjz/assets/js/174.da7ad396.js"><link rel="prefetch" href="/lanjz/assets/js/175.d4c739ac.js"><link rel="prefetch" href="/lanjz/assets/js/176.cc675500.js"><link rel="prefetch" href="/lanjz/assets/js/177.5b70b1d4.js"><link rel="prefetch" href="/lanjz/assets/js/178.2319ae70.js"><link rel="prefetch" href="/lanjz/assets/js/179.3d1ce151.js"><link rel="prefetch" href="/lanjz/assets/js/18.9dcaeec3.js"><link rel="prefetch" href="/lanjz/assets/js/180.278212e3.js"><link rel="prefetch" href="/lanjz/assets/js/181.4067162b.js"><link rel="prefetch" href="/lanjz/assets/js/182.6ae36107.js"><link rel="prefetch" href="/lanjz/assets/js/183.a82782e5.js"><link rel="prefetch" href="/lanjz/assets/js/184.367c92e1.js"><link rel="prefetch" href="/lanjz/assets/js/185.ba1bb6e6.js"><link rel="prefetch" href="/lanjz/assets/js/186.68a45286.js"><link rel="prefetch" href="/lanjz/assets/js/187.10b9cb2e.js"><link rel="prefetch" href="/lanjz/assets/js/188.950b38f1.js"><link rel="prefetch" href="/lanjz/assets/js/189.cf08df1a.js"><link rel="prefetch" href="/lanjz/assets/js/19.ed1bbc63.js"><link rel="prefetch" href="/lanjz/assets/js/190.61089b48.js"><link rel="prefetch" href="/lanjz/assets/js/191.8afd4582.js"><link rel="prefetch" href="/lanjz/assets/js/192.d7b81726.js"><link rel="prefetch" href="/lanjz/assets/js/193.57a534df.js"><link rel="prefetch" href="/lanjz/assets/js/194.1c9eb9f1.js"><link rel="prefetch" href="/lanjz/assets/js/195.768f104c.js"><link rel="prefetch" href="/lanjz/assets/js/196.73409054.js"><link rel="prefetch" href="/lanjz/assets/js/197.a81343de.js"><link rel="prefetch" href="/lanjz/assets/js/198.b976739a.js"><link rel="prefetch" href="/lanjz/assets/js/199.761975fb.js"><link rel="prefetch" href="/lanjz/assets/js/20.cb51f93b.js"><link rel="prefetch" href="/lanjz/assets/js/200.ac4690ee.js"><link rel="prefetch" href="/lanjz/assets/js/201.54892073.js"><link rel="prefetch" href="/lanjz/assets/js/21.14ef330a.js"><link rel="prefetch" href="/lanjz/assets/js/22.851053b7.js"><link rel="prefetch" href="/lanjz/assets/js/23.97f11872.js"><link rel="prefetch" href="/lanjz/assets/js/24.8b7fe7e7.js"><link rel="prefetch" href="/lanjz/assets/js/25.9785e812.js"><link rel="prefetch" href="/lanjz/assets/js/26.e833a3fc.js"><link rel="prefetch" href="/lanjz/assets/js/27.d0224e2e.js"><link rel="prefetch" href="/lanjz/assets/js/28.6a97024d.js"><link rel="prefetch" href="/lanjz/assets/js/29.044c8324.js"><link rel="prefetch" href="/lanjz/assets/js/3.4fd4d6ce.js"><link rel="prefetch" href="/lanjz/assets/js/30.19ec82d0.js"><link rel="prefetch" href="/lanjz/assets/js/31.95eb8b7c.js"><link rel="prefetch" href="/lanjz/assets/js/32.9ec1638e.js"><link rel="prefetch" href="/lanjz/assets/js/33.8cb76a63.js"><link rel="prefetch" href="/lanjz/assets/js/34.b460535c.js"><link rel="prefetch" href="/lanjz/assets/js/35.b587af0e.js"><link rel="prefetch" href="/lanjz/assets/js/36.564fdbca.js"><link rel="prefetch" href="/lanjz/assets/js/37.e4f67436.js"><link rel="prefetch" href="/lanjz/assets/js/38.783d74f3.js"><link rel="prefetch" href="/lanjz/assets/js/39.6a2866e8.js"><link rel="prefetch" href="/lanjz/assets/js/4.3802e1cb.js"><link rel="prefetch" href="/lanjz/assets/js/40.80adca89.js"><link rel="prefetch" href="/lanjz/assets/js/41.4a9f3cb1.js"><link rel="prefetch" href="/lanjz/assets/js/42.72b6f021.js"><link rel="prefetch" href="/lanjz/assets/js/43.148b109f.js"><link rel="prefetch" href="/lanjz/assets/js/44.2904b577.js"><link rel="prefetch" href="/lanjz/assets/js/45.f8e64a75.js"><link rel="prefetch" href="/lanjz/assets/js/46.194cdd2c.js"><link rel="prefetch" href="/lanjz/assets/js/47.d7a1eee7.js"><link rel="prefetch" href="/lanjz/assets/js/48.254a8390.js"><link rel="prefetch" href="/lanjz/assets/js/49.608068d2.js"><link rel="prefetch" href="/lanjz/assets/js/5.1a6efd45.js"><link rel="prefetch" href="/lanjz/assets/js/50.49cd15c3.js"><link rel="prefetch" href="/lanjz/assets/js/51.cb53513a.js"><link rel="prefetch" href="/lanjz/assets/js/52.f42dc47b.js"><link rel="prefetch" href="/lanjz/assets/js/53.56437649.js"><link rel="prefetch" href="/lanjz/assets/js/54.ecce13a5.js"><link rel="prefetch" href="/lanjz/assets/js/55.f959dee2.js"><link rel="prefetch" href="/lanjz/assets/js/56.f89d43e4.js"><link rel="prefetch" href="/lanjz/assets/js/57.8f464cda.js"><link rel="prefetch" href="/lanjz/assets/js/58.ef375410.js"><link rel="prefetch" href="/lanjz/assets/js/59.53a5b9c7.js"><link rel="prefetch" href="/lanjz/assets/js/6.2a3529f7.js"><link rel="prefetch" href="/lanjz/assets/js/60.0305f44c.js"><link rel="prefetch" href="/lanjz/assets/js/61.f31f117a.js"><link rel="prefetch" href="/lanjz/assets/js/62.fe5ce2e9.js"><link rel="prefetch" href="/lanjz/assets/js/63.8030cc72.js"><link rel="prefetch" href="/lanjz/assets/js/64.a3d68b22.js"><link rel="prefetch" href="/lanjz/assets/js/65.a5d90b8a.js"><link rel="prefetch" href="/lanjz/assets/js/66.ee0baed7.js"><link rel="prefetch" href="/lanjz/assets/js/67.5d18a7e8.js"><link rel="prefetch" href="/lanjz/assets/js/68.3facc0ae.js"><link rel="prefetch" href="/lanjz/assets/js/69.d49b6c44.js"><link rel="prefetch" href="/lanjz/assets/js/7.253748fb.js"><link rel="prefetch" href="/lanjz/assets/js/70.60ec57bb.js"><link rel="prefetch" href="/lanjz/assets/js/71.646675d3.js"><link rel="prefetch" href="/lanjz/assets/js/72.cda11d39.js"><link rel="prefetch" href="/lanjz/assets/js/73.aa566793.js"><link rel="prefetch" href="/lanjz/assets/js/74.154b4dc1.js"><link rel="prefetch" href="/lanjz/assets/js/75.eb188cde.js"><link rel="prefetch" href="/lanjz/assets/js/76.f3c7f69a.js"><link rel="prefetch" href="/lanjz/assets/js/77.25c12eab.js"><link rel="prefetch" href="/lanjz/assets/js/78.212c7733.js"><link rel="prefetch" href="/lanjz/assets/js/79.79a74859.js"><link rel="prefetch" href="/lanjz/assets/js/8.00723369.js"><link rel="prefetch" href="/lanjz/assets/js/80.737c4f47.js"><link rel="prefetch" href="/lanjz/assets/js/81.b7a30849.js"><link rel="prefetch" href="/lanjz/assets/js/82.665aa383.js"><link rel="prefetch" href="/lanjz/assets/js/83.2dcf80f9.js"><link rel="prefetch" href="/lanjz/assets/js/84.eb8f6658.js"><link rel="prefetch" href="/lanjz/assets/js/85.95290bd7.js"><link rel="prefetch" href="/lanjz/assets/js/86.10516fe4.js"><link rel="prefetch" href="/lanjz/assets/js/87.cc609da2.js"><link rel="prefetch" href="/lanjz/assets/js/88.df7752b2.js"><link rel="prefetch" href="/lanjz/assets/js/89.e1c531e9.js"><link rel="prefetch" href="/lanjz/assets/js/9.01bf6833.js"><link rel="prefetch" href="/lanjz/assets/js/90.198aafd0.js"><link rel="prefetch" href="/lanjz/assets/js/91.a52d269d.js"><link rel="prefetch" href="/lanjz/assets/js/92.2be95a27.js"><link rel="prefetch" href="/lanjz/assets/js/93.60eb3f72.js"><link rel="prefetch" href="/lanjz/assets/js/94.508edcd5.js"><link rel="prefetch" href="/lanjz/assets/js/95.21ac0aec.js"><link rel="prefetch" href="/lanjz/assets/js/96.dba7c5cf.js"><link rel="prefetch" href="/lanjz/assets/js/97.8006f58a.js"><link rel="prefetch" href="/lanjz/assets/js/98.881109d8.js"><link rel="prefetch" href="/lanjz/assets/js/99.05dfcb7b.js">
+    <link rel="stylesheet" href="/lanjz/assets/css/0.styles.5dda244b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/lanjz/" class="home-link router-link-active"><!----> <span class="site-name">Hello Wold</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/lanjz/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/HTML5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Browser/" class="nav-link">
+  Browser
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络&amp;算法" class="dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络&amp;算法" class="mobile-dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/secure/" class="nav-link">
+  Web安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Vue/" class="nav-link router-link-active">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Vue3/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/qiankun/" class="nav-link">
+  qiankun
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/NA/" class="nav-link">
+  跨平台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Node/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Api/" class="nav-link">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Package/" class="nav-link">
+  yarn&amp;npm
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端优化总结/" class="nav-link">
+  前端优化总结
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/系统设计/" class="nav-link">
+  系统设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/预加载&amp;预解析.html" class="nav-link">
+  预加载&amp;预解析
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/重构改善既有代码的设计.html" class="nav-link">
+  重构代码原则
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/开发与调试技巧.html" class="nav-link">
+  开发与调试
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/组件设计的基本原则.html" class="nav-link">
+  组件设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/公共模块管理.html" class="nav-link">
+  公共模块管理
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/内存泄漏.html" class="nav-link">
+  内存泄漏
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端异常捕获.html" class="nav-link">
+  前端异常捕获
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/自动化部署.html" class="nav-link">
+  自动化部署
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/疑难杂症.html" class="nav-link">
+  疑难杂症
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="利其器" class="dropdown-title"><span class="title">利其器</span> <span class="arrow down"></span></button> <button type="button" aria-label="利其器" class="mobile-dropdown-title"><span class="title">利其器</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Mac.html" class="nav-link">
+  Mac
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Github.html" class="nav-link">
+  Github
+</a></li></ul></div></div><div class="nav-item"><a href="/lanjz/Im/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/lanjz/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/HTML5/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Browser/" class="nav-link">
+  Browser
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络&amp;算法" class="dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络&amp;算法" class="mobile-dropdown-title"><span class="title">网络&amp;算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/secure/" class="nav-link">
+  Web安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Vue/" class="nav-link router-link-active">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Vue3/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/qiankun/" class="nav-link">
+  qiankun
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/NA/" class="nav-link">
+  跨平台
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/Node/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Api/" class="nav-link">
+  API
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Package/" class="nav-link">
+  yarn&amp;npm
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/Node/Webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端优化总结/" class="nav-link">
+  前端优化总结
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/系统设计/" class="nav-link">
+  系统设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/预加载&amp;预解析.html" class="nav-link">
+  预加载&amp;预解析
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/重构改善既有代码的设计.html" class="nav-link">
+  重构代码原则
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/开发与调试技巧.html" class="nav-link">
+  开发与调试
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/组件设计的基本原则.html" class="nav-link">
+  组件设计
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/公共模块管理.html" class="nav-link">
+  公共模块管理
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/内存泄漏.html" class="nav-link">
+  内存泄漏
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/前端异常捕获.html" class="nav-link">
+  前端异常捕获
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/自动化部署.html" class="nav-link">
+  自动化部署
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/工程化/疑难杂症.html" class="nav-link">
+  疑难杂症
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="利其器" class="dropdown-title"><span class="title">利其器</span> <span class="arrow down"></span></button> <button type="button" aria-label="利其器" class="mobile-dropdown-title"><span class="title">利其器</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Mac.html" class="nav-link">
+  Mac
+</a></li><li class="dropdown-item"><!----> <a href="/lanjz/利其器/Github.html" class="nav-link">
+  Github
+</a></li></ul></div></div><div class="nav-item"><a href="/lanjz/Im/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/lanjz/Vue/组件通信.html" class="sidebar-link">Vue 组件通信方式</a></li><li><a href="/lanjz/Vue/模板到DOM.html" class="sidebar-link">模板到真实DOM经历了什么？</a></li><li><a href="/lanjz/Vue/响应式原理.html" class="sidebar-link">响应式原理</a></li><li><a href="/lanjz/Vue/Watcher更新顺序.html" class="sidebar-link">Watcher更新顺序</a></li><li><a href="/lanjz/Vue/PatchNode.html" class="sidebar-link">组件更新机制(diff)</a></li><li><a href="/lanjz/Vue/Watch.html" class="sidebar-link">Watch</a></li><li><a href="/lanjz/Vue/Computed.html" class="sidebar-link">Computed</a></li><li><a href="/lanjz/Vue/v-model.html" class="sidebar-link">v-model</a></li><li><a href="/lanjz/Vue/$nextTick.html" aria-current="page" class="active sidebar-link">$nextTick</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lanjz/Vue/$nextTick.html#vue异步更新队列" class="sidebar-link">Vue异步更新队列</a></li><li class="sidebar-sub-header"><a href="/lanjz/Vue/$nextTick.html#源码分析" class="sidebar-link">源码分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lanjz/Vue/$nextTick.html#例子" class="sidebar-link">例子</a></li></ul></li><li class="sidebar-sub-header"><a href="/lanjz/Vue/$nextTick.html#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/lanjz/Vue/$set.html" class="sidebar-link">$set</a></li><li><a href="/lanjz/Vue/数据代理.html" class="sidebar-link">数据代理</a></li><li><a href="/lanjz/Vue/VueRouter.html" class="sidebar-link">Vue-Router</a></li><li><a href="/lanjz/Vue/Vuex.html" class="sidebar-link">Vuex</a></li><li><a href="/lanjz/Vue/Extend.html" class="sidebar-link">Extend</a></li><li><a href="/lanjz/Vue/SSR.html" class="sidebar-link">VUE-SSR</a></li><li><a href="/lanjz/Vue/共享状态思想.html" class="sidebar-link">共享状态思想</a></li><li><a href="/lanjz/Vue/Paas应用.html" class="sidebar-link">PAAS应用</a></li><li><a href="/lanjz/Vue/吱不吱.html" class="sidebar-link">吱不吱</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="nexttick"><a href="#nexttick" class="header-anchor">#</a> $nextTick</h1> <p><code>$nextTick</code> 的作用是在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM</p> <p>用法：<code>Vue.nextTick( [callback, context] )</code></p> <p>为什么需要 <code>$nextTick</code> 才能准确取后更新后的 DOM 呢？因为 Vue 的视图更新是异步，准确来说是 Vue 的依赖更新是异步的</p> <h2 id="vue异步更新队列"><a href="#vue异步更新队列" class="header-anchor">#</a> Vue异步更新队列</h2> <blockquote><p><a href="https://cn.vuejs.org/v2/guide/reactivity.html#%E5%BC%82%E6%AD%A5%E6%9B%B4%E6%96%B0%E9%98%9F%E5%88%97" target="_blank" rel="noopener noreferrer">VUE - 异步更新队列<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>Vue 在更新 DOM 时是异步执行的。只要侦听到数据变化，Vue 将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个 <code>watcher</code> 被多次触发，只会被推入到队列中一次。</p> <p>然后，在下一个的事件循环 <code>“tick”</code> 中，Vue 刷新队列并执行实际 (已去重的) 工作。Vue 在内部对异步队列尝试使用原生的 <code>Promise.then</code>、<code>MutationObserver</code> 和 <code>setImmediate</code>，如果执行环境不支持，则会采用 <code>setTimeout(fn, 0)</code> 代替</p> <p>例如，当你设置 <code>vm.someData = 'new value'</code>，该组件不会立即重新渲染。 组件会在下一个事件循环 <code>“tick”</code> 中更新。多数情况我们不需要关心这个过程，但是如果你想基于更新后的 DOM 状态来做点什么，这就可能会有些棘手。虽然 Vue.js 通常鼓励开发人员使用“数据驱动”的方式思考，避免直接接触 DOM，但是有时我们必须要这么做。为了在数据变化之后等待 Vue 完成更新 DOM，可以在数据变化之后立即使用 <code>Vue.nextTick(callback)</code>。这样回调函数将在 DOM 更新完成后被调用。例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">&quot;example&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>message<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token keyword">var</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  el<span class="token operator">:</span> <span class="token string">'#example'</span><span class="token punctuation">,</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    message<span class="token operator">:</span> <span class="token string">'123'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+vm<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">'new message'</span> <span class="token comment">// 更改数据</span>
+vm<span class="token punctuation">.</span>$el<span class="token punctuation">.</span>textContent <span class="token operator">===</span> <span class="token string">'new message'</span> <span class="token comment">// false</span>
+Vue<span class="token punctuation">.</span><span class="token function">nextTick</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  vm<span class="token punctuation">.</span>$el<span class="token punctuation">.</span>textContent <span class="token operator">===</span> <span class="token string">'new message'</span> <span class="token comment">// true</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>因为 <code>$nextTick()</code> 返回一个 <code>Promise</code> 对象，所以你可以使用新的 ES2017 <code>async/await</code> 语法完成相同的事情：</p> <div class="language-js extra-class"><pre class="language-js"><code>methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">updateMessage</span><span class="token operator">:</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">'已更新'</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$el<span class="token punctuation">.</span>textContent<span class="token punctuation">)</span> <span class="token comment">// =&gt; '未更新'</span>
+    <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$el<span class="token punctuation">.</span>textContent<span class="token punctuation">)</span> <span class="token comment">// =&gt; '已更新'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="源码分析"><a href="#源码分析" class="header-anchor">#</a> 源码分析</h2> <p><code>$nextTick</code> 的源码中的定义如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">$nextTick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">nextTick</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// nextTick 方法</span>
+  <span class="token keyword">function</span> <span class="token function">nextTick</span> <span class="token punctuation">(</span><span class="token parameter">cb<span class="token punctuation">,</span> ctx</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> _resolve<span class="token punctuation">;</span>
+    callbacks<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>cb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+          <span class="token function">cb</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">handleError</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> ctx<span class="token punctuation">,</span> <span class="token string">'nextTick'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>_resolve<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">_resolve</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>pending<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pending <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token function">timerFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// $flow-disable-line</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>cb <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> Promise <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        _resolve <span class="token operator">=</span> resolve<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p><code>nextTick</code> 接收的第一个参数 <code>cb</code> ， <code>cb</code> 就是要推入事件循环任务队列中的函数。它可以当前更新组件的方法，也可以是一个 <code>watch</code> 监听的回调，也可以我们通过 <code>this.$nexttick</code> 传的回调函数。这些函数并不是立马执行的， 而是先将这些函数存入 <code>callbacks</code> 中，<code>callbacks</code> 是一个存放这些任务的数组。等收集完之后根据事件循环机制将在当前宏任务代码执行完这后统一执行。起到延迟执行的作用</p> <p>通过一个例子来理解一下如何延迟执行代码：</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+</code></pre></div><p>上面例子通过 <code>Promise.resolve().then</code> 方法，将 <code>console.log(2)</code> 的执行延迟了</p> <p>回到 <code>nextTick</code> 方法中 <code>timerFunc()</code> 的作用就等同时开启一个延迟执行的任务。之后设置 <code>pending</code> 变量， <code>pending</code> 是一个标志，默认是 <code>false</code> 当新的微任务开始收集时，会进入 <code>if (!pending)</code> 条件，执行 <code>timerFunc()</code>。 <code>timerFunc()</code> 定义如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">var</span> timerFunc<span class="token punctuation">;</span>
+
+  <span class="token comment">// The nextTick behavior leverages the microtask queue, which can be accessed</span>
+  <span class="token comment">// via either native Promise.then or MutationObserver.</span>
+  <span class="token comment">// MutationObserver has wider support, however it is seriously bugged in</span>
+  <span class="token comment">// UIWebView in iOS &gt;= 9.3.3 when triggered in touch event handlers. It</span>
+  <span class="token comment">// completely stops working after triggering a few times... so, if native</span>
+  <span class="token comment">// Promise is available, we will use it:</span>
+  <span class="token comment">/* istanbul ignore next, $flow-disable-line */</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> Promise <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isNative</span><span class="token punctuation">(</span>Promise<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> p <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function-variable function">timerFunc</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      p<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>flushCallbacks<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// In problematic UIWebViews, Promise.then doesn't completely break, but</span>
+      <span class="token comment">// it can get stuck in a weird state where callbacks are pushed into the</span>
+      <span class="token comment">// microtask queue but the queue isn't being flushed, until the browser</span>
+      <span class="token comment">// needs to do some other work, e.g. handle a timer. Therefore we can</span>
+      <span class="token comment">// &quot;force&quot; the microtask queue to be flushed by adding an empty timer.</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>isIOS<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span>noop<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    isUsingMicroTask <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isIE <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> MutationObserver <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>
+    <span class="token function">isNative</span><span class="token punctuation">(</span>MutationObserver<span class="token punctuation">)</span> <span class="token operator">||</span>
+    <span class="token comment">// PhantomJS and iOS 7.x</span>
+    MutationObserver<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'[object MutationObserverConstructor]'</span>
+  <span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Use MutationObserver where native Promise is not available,</span>
+    <span class="token comment">// e.g. PhantomJS, iOS7, Android 4.4</span>
+    <span class="token comment">// (#6466 MutationObserver is unreliable in IE11)</span>
+    <span class="token keyword">var</span> counter <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MutationObserver</span><span class="token punctuation">(</span>flushCallbacks<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> textNode <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token function">String</span><span class="token punctuation">(</span>counter<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    observer<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>textNode<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      characterData<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function-variable function">timerFunc</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      counter <span class="token operator">=</span> <span class="token punctuation">(</span>counter <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">2</span><span class="token punctuation">;</span>
+      textNode<span class="token punctuation">.</span>data <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span>counter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    isUsingMicroTask <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> setImmediate <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isNative</span><span class="token punctuation">(</span>setImmediate<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Fallback to setImmediate.</span>
+    <span class="token comment">// Technically it leverages the (macro) task queue,</span>
+    <span class="token comment">// but it is still a better choice than setTimeout.</span>
+    <span class="token function-variable function">timerFunc</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">setImmediate</span><span class="token punctuation">(</span>flushCallbacks<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Fallback to setTimeout.</span>
+    <span class="token function-variable function">timerFunc</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span>flushCallbacks<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p><code>timerFunc</code> 其实就是一个触发异步任务的方法，根据环境可能是以下之一 <code>Promise.then</code>、<code>MutationObserver</code> 和 <code>setImmediate</code>， <code>setTimeout(fn, 0)</code> 。总之就是将 <code>timerFunc()</code> 回调延迟执行。上面代码中异步的回调是个 <code>flushCallbacks()</code> 方法, 下面是它的定义：</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">var</span> callbacks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> pending <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">flushCallbacks</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    pending <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> copies <span class="token operator">=</span> callbacks<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    callbacks<span class="token punctuation">.</span>length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> copies<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      copies<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p><code>flushCallbacks</code> 方法就是从上文提到的 <code>callbacks</code> 数组中取出之前保存任务，然后并一一执行，同时 <code>callbacks</code> 长置为 <code>0</code> 好接收下一批要执行任务。</p> <p><code>nextTick</code> 方法中除了执行 <code>timerFunc()</code>, 同时还有一个 <code>pending 变量</code>，<code>pending</code> 的作用是一个标记，初始值为 <code>false</code>,当启动一个延迟任务之后 <code>pending</code> 设为 <code>true</code>，在同一时间段内如果 <code>nextTick</code> 还有被触发那么这些任务将会被收集在一起。被收集到一起的任务都在下一整件循环中一起执行。当这些一次延迟任务开始执行的时候 <code>pending</code> 才会重置为 <code>false</code>，之后收集的任务将在一下延迟中执行。</p> <p>上文都是延迟任务的收集部分。之后事件循环进入这些任务的执行阶段时，将会执行延迟的回调 <code>flushCallbacks</code> 方法</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token comment">// </span>
+  <span class="token keyword">var</span> callbacks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> pending <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">function</span> <span class="token function">flushCallbacks</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    pending <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> copies <span class="token operator">=</span> callbacks<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    callbacks<span class="token punctuation">.</span>length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> copies<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      copies<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>上面代码中首先 <code>pending</code> 设为初始值 <code>false</code>, 之后收集的任务将在一下延迟中执行。然后从 <code>callbacks</code> 数组取出保存的任务，一一执行</p> <h3 id="例子"><a href="#例子" class="header-anchor">#</a> 例子</h3> <p>以下面通过例子来看下 <code>$nextTick</code> 的执行过程</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">&quot;app&quot;</span><span class="token operator">&gt;</span>
+  <span class="token punctuation">{</span><span class="token punctuation">{</span> name <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>br<span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token punctuation">{</span><span class="token punctuation">{</span>bind<span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+  <span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+    data<span class="token operator">:</span> <span class="token punctuation">{</span>
+      message<span class="token operator">:</span> <span class="token string">'AA'</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> <span class="token string">'哈哈'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">bind</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>message <span class="token operator">+</span> <span class="token string">'__________'</span>
+        <span class="token keyword">return</span> result
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    watch<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">message</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">debugger</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'nextTick'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'mounted'</span><span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&quot;message_B&quot;</span>
+      <span class="token keyword">debugger</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'nextTick2'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p>当 <code>mounted</code> 钩子触发后，执行了两个 <code>this.$nextTick</code> 方法和一个 <code>this.message</code> 属性值的修改</p> <p>首先执行第一个 <code>this.$nextTick</code></p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">function</span> <span class="token function">nextTick</span> <span class="token punctuation">(</span><span class="token parameter">cb<span class="token punctuation">,</span> ctx</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> _resolve<span class="token punctuation">;</span>
+    callbacks<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>cb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+          <span class="token function">cb</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">handleError</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> ctx<span class="token punctuation">,</span> <span class="token string">'nextTick'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>_resolve<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">_resolve</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>pending<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      pending <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token function">timerFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// $flow-disable-line</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>cb <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> Promise <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        _resolve <span class="token operator">=</span> resolve<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>将 <code>() =&gt; console.log('nextTick')</code> 存入 <code>callbacks</code> 数组，并执行 <code>timerFunc()</code> 开启一次延迟，同时 <code>pending = true</code> 表示当前延迟任务已开启</p> <p>然后执行 <code>this.message = &quot;message_B&quot;</code></p> <p>当 <code>message</code> 变化时，将会执行 <code>message</code> 属性收集的 <code>Watcher</code> 事件，上面例子 <code>message</code> 属性收集的事件有：<code>watch Watcher</code>、 <code>computed Watcher</code>、 <code>render Watcher</code></p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token class-name">Dep</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">notify</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">notify</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> subs <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>config<span class="token punctuation">.</span>async<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      subs<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> a<span class="token punctuation">.</span>id <span class="token operator">-</span> b<span class="token punctuation">.</span>id<span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> l <span class="token operator">=</span> subs<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      subs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token comment">// update</span>
+    <span class="token class-name">Watcher</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">update</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">update</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>lazy<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>dirty <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>sync<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token function">queueWatcher</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token comment">// queueWatcher</span>
+   <span class="token keyword">function</span> <span class="token function">queueWatcher</span> <span class="token punctuation">(</span><span class="token parameter">watcher</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> id <span class="token operator">=</span> watcher<span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>has<span class="token punctuation">[</span>id<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      has<span class="token punctuation">[</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>flushing<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>watcher<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// if already flushing, splice the watcher based on its id</span>
+        <span class="token comment">// if already past its id, it will be run next immediately.</span>
+        <span class="token keyword">var</span> i <span class="token operator">=</span> queue<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&gt;</span> index <span class="token operator">&amp;&amp;</span> queue<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>id <span class="token operator">&gt;</span> watcher<span class="token punctuation">.</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          i<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        queue<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> watcher<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">// queue the flush</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>waiting<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        waiting <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>config<span class="token punctuation">.</span>async<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">flushSchedulerQueue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">nextTick</span><span class="token punctuation">(</span>flushSchedulerQueue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>数据变化然后发出响应，首先遍历收集器 <code>subs</code> 中的任务上然后通过  <code>queueWatcher()</code>将当前要执行的 <code>watcher</code> 推入到 <code>queue</code> 数组中， 然后将 <code>flushSchedulerQueue</code> 方法通过 <code>nextTick()</code> 方法添加到异步任务回调的 <code>callbacks</code> 数组中。</p> <p>然后执行最后一个 <code>this.$nextTick</code>，将回调 <code>() =&gt; {console.log('nextTick2')}</code> 添加到异步任务回调的 <code>callbacks</code> 数组中。</p> <p>之后就是将当前宏任务的代码块执行完，过了肉眼不可见的时间之后，将会执行异步回调 <code>flushCallbacks</code> 方法</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">function</span> <span class="token function">flushCallbacks</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    pending <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> copies <span class="token operator">=</span> callbacks<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    callbacks<span class="token punctuation">.</span>length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> copies<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      copies<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>上面代码执行就是取出 <code>callbacks</code> 里的回调函数，一一执行</p> <ol><li><p>首先执行每一个 <code>$nextTick</code> 回调，输出 <code>console.log('nextTick')</code></p></li> <li><p>执行 <code>message</code> 属性收集的 <code>Watcher</code> 事件，包括视图的更新</p></li> <li><p>执行最后一个 <code>$nextTick</code> 回调，输出 <code>console.log('nextTick2')</code>，因为上一步视图已经更新了，所以如果在这个回调里是可以访问到更新后的 DOM 元素的</p></li></ol> <p><strong>如果 <code>$nextTick</code> 又执行一个 <code>$nextTick</code> 会怎样呢</strong></p> <p>上文说过  <code>nextTick</code> 方法中有个 <code>pedding</code> 标记。在开启一轮延迟任务的时候会将 <code>pedding</code> 设为 <code>true</code>，收集同一时间的需要延迟执行的任务。</p> <p>当这一轮的延迟的任务（A）开始执行时更新 <code>pedding</code> 状态 <code>pedding = false</code>。所以此时在回调内如果又执行了 <code>$nextTick</code>，相当于又开启了新一个延迟任务（B），新一轮的回调将在当前回调（A）执行之后执行</p> <p>相当以下代码：</p> <div class="language-js extra-class"><pre class="language-js"><code>Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 执行第一个异步结果</span>
+    Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 又添加了一个异步任务</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 执行第二个异步结果</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>同一时间的任务都会保存到 <code>callback</code> 队列中，同时根据环境使用原生的 <code>Promise.then</code>、<code>MutationObserver</code> 和 <code>setImmediate</code>方法，延迟执行 <code>callback</code> 中的任务</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/lanjz/Vue/v-model.html" class="prev">
+        v-model
+      </a></span> <span class="next"><a href="/lanjz/Vue/$set.html">
+        $set
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/lanjz/assets/js/app.193a95f5.js" defer></script><script src="/lanjz/assets/js/2.42578501.js" defer></script><script src="/lanjz/assets/js/137.7976d756.js" defer></script>
+  </body>
+</html>
