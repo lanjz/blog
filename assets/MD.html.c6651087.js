@@ -1,0 +1,1 @@
+import{_ as o,o as t,c,a as n,r}from"./app.85c8df44.js";const s={};function _(a,l){const e=r("Resume");return t(),c("div",null,[n(e)])}var f=o(s,[["render",_],["__file","MD.html.vue"]]);export{f as default};
