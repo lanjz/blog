@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-0f429c29","path":"/qiankun/","title":"","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1662141762000,"contributors":[{"name":"LanJiangzhou","email":"lanjiangzhou@sfmail.sf-express.com","commits":1}]},"filePathRelative":"qiankun/README.md"}');export{a as data};
