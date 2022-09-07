@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as r,b as e,e as c}from"./app.a61e5c82.js";const o={},s=e("h1",{id:"page-1-2",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#page-1-2","aria-hidden":"true"},"#"),c(" Page-1-2")],-1),_=[s];function n(d,i){return t(),r("div",null,_)}var l=a(o,[["render",n],["__file","README2.html.vue"]]);export{l as default};
