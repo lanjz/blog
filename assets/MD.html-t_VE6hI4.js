@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-537b6fed","path":"/online-tools/MD.html","title":"","lang":"zh-CN","frontmatter":{"nav":false,"navbar":false,"pageClass":"resume-page"},"headers":[],"git":{"updatedTime":1700451141000,"contributors":[{"name":"LanJiangzhou","email":"lanjiangzhou@sfmail.sf-express.com","commits":1}]},"filePathRelative":"online-tools/MD.md"}');export{a as data};
