@@ -1,1 +1,0 @@
-import{_ as o,r as t,o as c,c as n,a as s}from"./app-WhMj9h_6.js";const r={};function _(a,l){const e=t("Resume");return c(),n("div",null,[s(e)])}const f=o(r,[["render",_],["__file","MD.html.vue"]]);export{f as default};
