@@ -1,0 +1,1 @@
+import{_ as a,o as t,c,b as e,d as o}from"./app-QMonxybV.js";const r={},s=e("h1",{id:"page-1-2",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#page-1-2","aria-hidden":"true"},"#"),o(" Page-1-2")],-1),n=[s];function _(d,i){return t(),c("div",null,n)}const l=a(r,[["render",_],["__file","README2.html.vue"]]);export{l as default};

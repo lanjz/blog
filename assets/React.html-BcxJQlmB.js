@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,b as a}from"./app-QMonxybV.js";const n={},o=a("p",null,"React 中有两种类型的ExpirationTime，一个是Interactive的，另一种是普通的异步。Interactive的比如说是由事件触发的，那么他的响应优先级会比较高因为涉及到交互",-1),_=[o];function r(s,i){return t(),c("div",null,_)}const d=e(n,[["render",r],["__file","React.html.vue"]]);export{d as default};
