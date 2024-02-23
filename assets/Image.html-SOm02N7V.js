@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-c685a13a","path":"/CSS/Image.html","title":"Image","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"webp","slug":"webp","link":"#webp","children":[]}],"git":{"updatedTime":1708684918000,"contributors":[{"name":"JiangZhou","email":"156081289@qq.com","commits":1}]},"filePathRelative":"CSS/Image.md"}');export{e as data};
